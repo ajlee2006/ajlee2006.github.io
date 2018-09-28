@@ -1,0 +1,1 @@
+a:1:{i:0;a:7:{s:12:"original_url";s:26:"https://sketchywebsite.net";s:9:"final_url";s:27:"https://sketchywebsite.net/";s:9:"file_name";s:10:"index.html";s:4:"code";b:0;s:5:"level";i:0;s:7:"is_done";b:1;s:13:"deep_php_file";s:0:"";}}
