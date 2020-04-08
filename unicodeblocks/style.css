@@ -1,1 +1,300 @@
+td
+{
+    font-family: NotoSans, 
+NotoSansAdlam, 
+NotoSansAdlamUnjoined, 
+NotoSansAnatolianHieroglyphs, 
+NotoSansArabic, 
+NotoSansArabicUI, 
+NotoSansArmenian, 
+NotoSansAvestan, 
+NotoSansBamum, 
+NotoSansBassaVah, 
+NotoSansBatak, 
+NotoSansBengali, 
+NotoSansBengaliUI, 
+NotoSansBhaiksuki, 
+NotoSansBrahmi, 
+NotoSansBuginese, 
+NotoSansBuhid, 
+NotoSansCanadianAboriginal, 
+NotoSansCarian, 
+NotoSansCaucasianAlbanian, 
+NotoSansChakma, 
+NotoSansCham, 
+NotoSansCherokee, 
+NotoSansCoptic, 
+NotoSansCuneiform, 
+NotoSansCypriot, 
+NotoSansDeseret, 
+NotoSansDevanagari, 
+NotoSansDevanagariUI, 
+NotoSansDisplay, 
+NotoSansDuployan, 
+NotoSansEgyptianHieroglyphs, 
+NotoSansElbasan, 
+NotoSansEthiopic, 
+NotoSansGeorgian, 
+NotoSansGlagolitic, 
+NotoSansGothic, 
+NotoSansGrantha, 
+NotoSansGujarati, 
+NotoSansGujaratiUI, 
+NotoSansGurmukhi, 
+NotoSansGurmukhiUI, 
+NotoSansHanifiRohingya, 
+NotoSansHanunoo, 
+NotoSansHatran, 
+NotoSansHebrew, 
+NotoSansImperialAramaic, 
+NotoSansIndicSiyaqNumbers, 
+NotoSansInscriptionalPahlavi, 
+NotoSansInscriptionalParthian, 
+NotoSansJavanese, 
+NotoSansKaithi, 
+NotoSansKannada, 
+NotoSansKannadaUI, 
+NotoSansKayahLi, 
+NotoSansKharoshthi, 
+NotoSansKhmer, 
+NotoSansKhmerUI, 
+NotoSansKhojki, 
+NotoSansKhudawadi, 
+NotoSansLao, 
+NotoSansLaoUI, 
+NotoSansLepcha, 
+NotoSansLimbu, 
+NotoSansLinearA, 
+NotoSansLinearB, 
+NotoSansLisu, 
+NotoSansLycian, 
+NotoSansLydian, 
+NotoSansMahajani, 
+NotoSansMalayalam, 
+NotoSansMalayalamUI, 
+NotoSansMandaic, 
+NotoSansManichaean, 
+NotoSansMarchen, 
+NotoSansMath, 
+NotoSansMayanNumerals, 
+NotoSansMeeteiMayek, 
+NotoSansMendeKikakui, 
+NotoSansMeroitic, 
+NotoSansMiao, 
+NotoSansModi, 
+NotoSansMongolian, 
+NotoSansMono, 
+NotoSansMro, 
+NotoSansMultani, 
+NotoSansMyanmar, 
+NotoSansMyanmarUI, 
+NotoSansNKo, 
+NotoSansNabataean, 
+NotoSansNewTaiLue, 
+NotoSansNewa, 
+NotoSansOgham, 
+NotoSansOlChiki, 
+NotoSansOldHungarian, 
+NotoSansOldItalic, 
+NotoSansOldNorthArabian, 
+NotoSansOldPermic, 
+NotoSansOldPersian, 
+NotoSansOldSogdian, 
+NotoSansOldSouthArabian, 
+NotoSansOldTurkic, 
+NotoSansOriya, 
+NotoSansOriyaUI, 
+NotoSansOsage, 
+NotoSansOsmanya, 
+NotoSansPahawhHmong, 
+NotoSansPalmyrene, 
+NotoSansPauCinHau, 
+NotoSansPhagsPa, 
+NotoSansPhoenician, 
+NotoSansPsalterPahlavi, 
+NotoSansRejang, 
+NotoSansRunic, 
+NotoSansSamaritan, 
+NotoSansSaurashtra, 
+NotoSansSharada, 
+NotoSansShavian, 
+NotoSansSiddham, 
+NotoSansSinhala, 
+NotoSansSinhalaUI, 
+NotoSansSoraSompeng, 
+NotoSansSundanese, 
+NotoSansSylotiNagri, 
+NotoSansSymbols, 
+NotoSansSymbols2, 
+NotoSansSyriac, 
+NotoSansTagalog, 
+NotoSansTagbanwa, 
+NotoSansTaiLe, 
+NotoSansTaiTham, 
+NotoSansTaiViet, 
+NotoSansTakri, 
+NotoSansTamil, 
+NotoSansTamilSupplement, 
+NotoSansTamilUI, 
+NotoSansTelugu, 
+NotoSansTeluguUI, 
+NotoSansThaana, 
+NotoSansThai, 
+NotoSansThaiUI, 
+NotoSansTibetan, 
+NotoSansTifinagh, 
+NotoSansTirhuta, 
+NotoSansUgaritic, 
+NotoSansVai, 
+NotoSansWarangCiti, 
+NotoSansYi;
+}
 
+@font-face {font-family:"NotoSans"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSans/NotoSans-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansAdlam"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansAdlam/NotoSansAdlam-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansAdlamUnjoined"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansAdlamUnjoined/NotoSansAdlamUnjoined-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansAnatolianHieroglyphs"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansAnatolianHieroglyphs/NotoSansAnatolianHieroglyphs-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansArabic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansArabic/NotoSansArabic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansArabicUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansArabicUI/NotoSansArabicUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansArmenian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansArmenian/NotoSansArmenian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansAvestan"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansAvestan/NotoSansAvestan-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansBamum"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansBamum/NotoSansBamum-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansBassaVah"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansBassaVah/NotoSansBassaVah-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansBatak"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansBatak/NotoSansBatak-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansBengali"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansBengali/NotoSansBengali-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansBengaliUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansBengaliUI/NotoSansBengaliUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansBhaiksuki"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansBhaiksuki/NotoSansBhaiksuki-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansBrahmi"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansBrahmi/NotoSansBrahmi-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansBuginese"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansBuginese/NotoSansBuginese-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansBuhid"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansBuhid/NotoSansBuhid-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansCanadianAboriginal"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansCanadianAboriginal/NotoSansCanadianAboriginal-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansCarian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansCarian/NotoSansCarian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansCaucasianAlbanian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansCaucasianAlbanian/NotoSansCaucasianAlbanian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansChakma"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansChakma/NotoSansChakma-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansCham"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansCham/NotoSansCham-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansCherokee"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansCherokee/NotoSansCherokee-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansCoptic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansCoptic/NotoSansCoptic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansCuneiform"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansCuneiform/NotoSansCuneiform-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansCypriot"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansCypriot/NotoSansCypriot-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansDeseret"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansDeseret/NotoSansDeseret-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansDevanagari"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansDevanagari/NotoSansDevanagari-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansDevanagariUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansDevanagariUI/NotoSansDevanagariUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansDisplay"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansDisplay/NotoSansDisplay-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansDuployan"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansDuployan/NotoSansDuployan-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansEgyptianHieroglyphs"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansEgyptianHieroglyphs/NotoSansEgyptianHieroglyphs-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansElbasan"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansElbasan/NotoSansElbasan-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansEthiopic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansEthiopic/NotoSansEthiopic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansGeorgian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansGeorgian/NotoSansGeorgian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansGlagolitic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansGlagolitic/NotoSansGlagolitic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansGothic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansGothic/NotoSansGothic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansGrantha"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansGrantha/NotoSansGrantha-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansGujarati"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansGujarati/NotoSansGujarati-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansGujaratiUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansGujaratiUI/NotoSansGujaratiUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansGurmukhi"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansGurmukhi/NotoSansGurmukhi-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansGurmukhiUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansGurmukhiUI/NotoSansGurmukhiUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansHanifiRohingya"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansHanifiRohingya/NotoSansHanifiRohingya-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansHanunoo"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansHanunoo/NotoSansHanunoo-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansHatran"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansHatran/NotoSansHatran-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansHebrew"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansHebrew/NotoSansHebrew-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansImperialAramaic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansImperialAramaic/NotoSansImperialAramaic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansIndicSiyaqNumbers"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansIndicSiyaqNumbers/NotoSansIndicSiyaqNumbers-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansInscriptionalPahlavi"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansInscriptionalPahlavi/NotoSansInscriptionalPahlavi-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansInscriptionalParthian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansInscriptionalParthian/NotoSansInscriptionalParthian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansJavanese"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansJavanese/NotoSansJavanese-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansKaithi"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansKaithi/NotoSansKaithi-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansKannada"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansKannada/NotoSansKannada-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansKannadaUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansKannadaUI/NotoSansKannadaUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansKayahLi"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansKayahLi/NotoSansKayahLi-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansKharoshthi"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansKharoshthi/NotoSansKharoshthi-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansKhmer"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansKhmer/NotoSansKhmer-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansKhmerUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansKhmerUI/NotoSansKhmerUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansKhojki"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansKhojki/NotoSansKhojki-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansKhudawadi"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansKhudawadi/NotoSansKhudawadi-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansLao"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansLao/NotoSansLao-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansLaoUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansLaoUI/NotoSansLaoUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansLepcha"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansLepcha/NotoSansLepcha-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansLimbu"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansLimbu/NotoSansLimbu-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansLinearA"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansLinearA/NotoSansLinearA-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansLinearB"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansLinearB/NotoSansLinearB-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansLisu"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansLisu/NotoSansLisu-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansLycian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansLycian/NotoSansLycian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansLydian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansLydian/NotoSansLydian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMahajani"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMahajani/NotoSansMahajani-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMalayalam"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMalayalam/NotoSansMalayalam-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMalayalamUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMalayalamUI/NotoSansMalayalamUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMandaic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMandaic/NotoSansMandaic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansManichaean"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansManichaean/NotoSansManichaean-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMarchen"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMarchen/NotoSansMarchen-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMath"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMath/NotoSansMath-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMayanNumerals"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMayanNumerals/NotoSansMayanNumerals-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMeeteiMayek"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMeeteiMayek/NotoSansMeeteiMayek-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMendeKikakui"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMendeKikakui/NotoSansMendeKikakui-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMeroitic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMeroitic/NotoSansMeroitic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMiao"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMiao/NotoSansMiao-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansModi"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansModi/NotoSansModi-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMongolian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMongolian/NotoSansMongolian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMono"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMono/NotoSansMono-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMro"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMro/NotoSansMro-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMultani"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMultani/NotoSansMultani-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMyanmar"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMyanmar/NotoSansMyanmar-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansMyanmarUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansMyanmarUI/NotoSansMyanmarUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansNKo"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansNKo/NotoSansNKo-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansNabataean"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansNabataean/NotoSansNabataean-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansNewTaiLue"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansNewTaiLue/NotoSansNewTaiLue-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansNewa"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansNewa/NotoSansNewa-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOgham"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOgham/NotoSansOgham-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOlChiki"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOlChiki/NotoSansOlChiki-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOldHungarian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOldHungarian/NotoSansOldHungarian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOldItalic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOldItalic/NotoSansOldItalic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOldNorthArabian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOldNorthArabian/NotoSansOldNorthArabian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOldPermic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOldPermic/NotoSansOldPermic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOldPersian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOldPersian/NotoSansOldPersian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOldSogdian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOldSogdian/NotoSansOldSogdian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOldSouthArabian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOldSouthArabian/NotoSansOldSouthArabian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOldTurkic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOldTurkic/NotoSansOldTurkic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOriya"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOriya/NotoSansOriya-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOriyaUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOriyaUI/NotoSansOriyaUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOsage"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOsage/NotoSansOsage-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansOsmanya"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansOsmanya/NotoSansOsmanya-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansPahawhHmong"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansPahawhHmong/NotoSansPahawhHmong-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansPalmyrene"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansPalmyrene/NotoSansPalmyrene-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansPauCinHau"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansPauCinHau/NotoSansPauCinHau-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansPhagsPa"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansPhagsPa/NotoSansPhagsPa-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansPhoenician"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansPhoenician/NotoSansPhoenician-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansPsalterPahlavi"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansPsalterPahlavi/NotoSansPsalterPahlavi-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansRejang"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansRejang/NotoSansRejang-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansRunic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansRunic/NotoSansRunic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSamaritan"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSamaritan/NotoSansSamaritan-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSaurashtra"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSaurashtra/NotoSansSaurashtra-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSharada"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSharada/NotoSansSharada-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansShavian"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansShavian/NotoSansShavian-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSiddham"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSiddham/NotoSansSiddham-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSinhala"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSinhala/NotoSansSinhala-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSinhalaUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSinhalaUI/NotoSansSinhalaUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSoraSompeng"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSoraSompeng/NotoSansSoraSompeng-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSundanese"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSundanese/NotoSansSundanese-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSylotiNagri"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSylotiNagri/NotoSansSylotiNagri-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSymbols"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSymbols/NotoSansSymbols-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSymbols2"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSymbols2/NotoSansSymbols2-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansSyriac"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansSyriac/NotoSansSyriac-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTagalog"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTagalog/NotoSansTagalog-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTagbanwa"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTagbanwa/NotoSansTagbanwa-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTaiLe"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTaiLe/NotoSansTaiLe-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTaiTham"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTaiTham/NotoSansTaiTham-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTaiViet"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTaiViet/NotoSansTaiViet-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTakri"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTakri/NotoSansTakri-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTamil"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTamil/NotoSansTamil-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTamilSupplement"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTamilSupplement/NotoSansTamilSupplement-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTamilUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTamilUI/NotoSansTamilUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTelugu"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTelugu/NotoSansTelugu-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTeluguUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTeluguUI/NotoSansTeluguUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansThaana"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansThaana/NotoSansThaana-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansThai"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansThai/NotoSansThai-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansThaiUI"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansThaiUI/NotoSansThaiUI-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTibetan"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTibetan/NotoSansTibetan-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTifinagh"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTifinagh/NotoSansTifinagh-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansTirhuta"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansTirhuta/NotoSansTirhuta-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansUgaritic"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansUgaritic/NotoSansUgaritic-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansVai"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansVai/NotoSansVai-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansWarangCiti"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansWarangCiti/NotoSansWarangCiti-Regular.ttf") format("truetype");}
+@font-face {font-family:"NotoSansYi"; src:url("https://raw.githubusercontent.com/googlefonts/noto-fonts/master/hinted/NotoSansYi/NotoSansYi-Regular.ttf") format("truetype");}
