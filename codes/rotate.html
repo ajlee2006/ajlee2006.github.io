@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#myDiv {
+    -webkit-transform: rotateY(150deg); /* Safari */
+    transform: rotateY(180deg); /* Standard syntax */
+}
+
+</style>
+</head>
+<body>
+
+<div id="myDiv">
+ <img src="https://earthsky.org/upl/2014/07/Eagle_nebula_pillars-e1469700487308.jpg" alt="Hydrogen" height="500" width="500"> 
+</div>
+
+<script type="text/javascript">
+  var ny=0,rotYINT;
+  var myDiv1 = document.getElementById('myDiv');
+  clearInterval(rotYINT);
+  rotYINT=setInterval("startYRotate();",15);
+  
+  function startYRotate(){
+	  ny=ny+1
+	  myDiv1.style.transform="rotateY(" + ny + "deg)"
+	  myDiv1.style.webkitTransform="rotateY(" + ny + "deg)"
+	  myDiv1.style.OTransform="rotateY(" + ny + "deg)"
+	  myDiv1.style.MozTransform="rotateY(" + ny + "deg)"
+	  if (ny>=360)
+	  {
+		ny=0;
+	  }
+  }
+  
+  myDiv1.style.MozTransform="rotateY(" + 180 + "deg)";
+</script>
+
+</body>
+
+</html>
