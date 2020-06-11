@@ -1,0 +1,80 @@
+<html>
+  <head>
+   <style>
+    img { vertical-align: -110%; }
+  </style>
+
+    <script>
+      function encode(){
+        usrText = document.getElementById("inText").value;  //get text entered by user, notice there are 2 "id"s in this file
+        out = document.getElementById("result"); //reference the <div>
+ as the output location of the text
+        //out.innerHTML = "<h3>
+<u></u></h3>
+" + usrText;  
+  
+ 
+
+ newText="";
+  for (i=0; i<usrText.length; i++){
+   console.log(i);
+   flag = map(usrText[i].toLowerCase());
+
+   if (flag == -1){
+    newText = newText + "<font size='100' >" + usrText[i] + "</font>"
+   } else {
+    newText = newText + '<img src="https://upload.wikimedia.org/wikipedia/commons/' + map(usrText[i].toLowerCase()) + '" height="75">'
+   }
+  };
+ 
+
+ out.innerHTML = "<h3>
+<u></u></h3>
+<br>" + newText; 
+//<img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/ICS_Pennant_Zero.svg" height="125">
+  
+      }
+ 
+   function map(inChar){
+     originalChrs = "abcdefghijklmnopqrstuvwxyz0123456789";
+  
+  //learn indexOf at http://www.w3schools.com/jsref/jsref_indexof_array.asp
+  x = originalChrs.indexOf(inChar); 
+  console.log("x = " + x + " for " + inChar);
+         
+  if (x == -1)
+   return x;
+
+     newChrs = ["7/71/ICS_Alpha.svg", "f/f7/ICS_Bravo.svg", "e/e7/ICS_Charlie.svg", "e/eb/ICS_Delta.svg", "0/0b/ICS_Echo.svg", "a/a8/ICS_Foxtrot.svg", 
+"f/fb/ICS_Golf.svg", "0/0f/ICS_Hotel.svg", "8/8e/ICS_India.svg", "a/a0/ICS_Juliet.svg",
+"a/a8/ICS_Kilo.svg", "7/76/ICS_Lima.svg", "7/73/ICS_Mike.svg", "2/21/ICS_November.svg", "c/c9/ICS_Oscar.svg", "d/d0/ICS_Papa.svg", 
+"d/d4/ICS_Quebec.svg", "b/bf/ICS_Romeo.svg", "3/36/ICS_Sierra.svg", "1/1e/ICS_Tango.svg",
+"e/e2/ICS_Uniform.svg", "e/ef/ICS_Victor.svg", "8/88/ICS_Whiskey.svg", "b/ba/ICS_X-ray.svg", "2/23/ICS_Yankee.svg", "c/c6/ICS_Zulu.svg", "a/ac/ICS_Pennant_Zero.svg", "c/c1/ICS_Pennant_One.svg", "c/c0/ICS_Pennant_Two.svg", "6/64/ICS_Pennant_Three.svg",
+"8/87/ICS_Pennant_Four.svg", "a/ad/ICS_Pennant_Five.svg", "d/da/ICS_Pennant_Six.svg", "b/b8/ICS_Pennant_Seven.svg", "3/30/ICS_Pennant_Eight.svg", "2/2c/ICS_Pennant_Niner.svg"];
+  if ( x != -1)
+    outChar = newChrs[x];
+  else
+    outChar = inChar;
+  return outChar;
+   }
+    </script>
+  </head>
+
+
+  <body background="http://www.shauntmax30.com/data/out/38/1268303-top-ranked-sky-wallpapers.jpg">
+ 
+    <h1>
+International Maritime Signal Flags</h1>
+<div>
+      Enter your message and watch it turn into flags!
+      <input id="inText" size="100" type="text" />
+
+
+      <input onclick="encode();" type="button" value="Turn into flags!" /> 
+
+      <div id="result">
+</div>
+</div>
+</body>
+
+</html>
