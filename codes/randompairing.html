@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script>
+      function encode(){
+        usrText = document.getElementById("inText").value;  //get text entered by user, notice there are 2 "id"s in this file
+        out = document.getElementById("result"); //reference the <div> as the output location of the text
+        //out.innerHTML = "<h3><u>Output</u></h3>" + usrText;
+
+
+
+	newText="";
+		for (i=0; i<usrText.length; i++){
+		newText = newText + map(usrText[i].toLowerCase())};
+
+
+	out.innerHTML = "<h3><u>Output</u></h3><br>" + newText;
+
+
+      }
+
+	  function map(inChar){
+	    originalChrs = "abcdefghijklmnopqrstuvwxyz";
+
+		//learn indexOf at http://www.w3schools.com/jsref/jsref_indexof_array.asp
+		x = originalChrs.indexOf(inChar);
+
+	    newChrs = ["O", "Z", "Y", "U", "T", "R", "K", "N", "P", "X",
+		           "G", "W", "V", "H", "A", "R", "S", "F", "Q", "E",
+				   "D", "M", "L", "J", "C", "B"];
+		if ( x != -1)
+		  outChar = newChrs[x];
+		else
+		  outChar = inChar;
+		return outChar;
+	  }
+    </script>
+  </head>
+
+
+  <body>
+    <h1>Encoder and Decoder</h1>
+    <div>
+      Enter your message:
+      <p><input type="text" id="inText" size="100"/>
+
+
+      <input type="button" value="ENCODE/DECODE" onclick="encode();"/>
+
+      <p><div id="result"></div>
+
+    </div>
+  </body>
+
+</html>
