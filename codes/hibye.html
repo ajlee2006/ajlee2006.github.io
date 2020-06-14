@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<span id="change">Hi</span>
+
+<script>
+var x = document.getElementById("change");
+
+function hi() {
+  if (x.innerHTML === "Bye") {
+    x.innerHTML = "Hi";
+  } else { 
+    x.innerHTML = "Bye";
+  }
+}
+    
+setInterval(hi,800); // changes every 800 ms
+
+</script>
+
+</body>
+</html>
