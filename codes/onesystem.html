@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Convert One System to SI Units</title>
+  <style>
+  	input[type=number] { width: 20px; }
+  	input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none;  margin: 0; }
+  </style>
+  <script>
+  	function sitosu(){
+  		document.getElementById("l1").value = document.getElementById("m").value;
+  		document.getElementById("m1").value = document.getElementById("kg").value;
+  		document.getElementById("t1").value = document.getElementById("s").value;
+  		document.getElementById("C1").value = document.getElementById("A").value;
+  		document.getElementById("T1").value = document.getElementById("K").value;
+  		document.getElementById("a1").value = document.getElementById("mol").value;
+  		document.getElementById("L1").value = document.getElementById("cd").value;
+  		var ans = document.getElementById("no").value;
+  		ans = ans*Math.pow(9192631770/299792498,document.getElementById("l1").value);
+  		ans = ans*Math.pow(1/(6.62607015*Math.pow(10,-34) * 9192631770*9192631770 / 299792498),document.getElementById("m1").value);
+  		ans = ans*Math.pow(9192631770,document.getElementById("t1").value);
+  		ans = ans*Math.pow(1/(1.602176634*Math.pow(10,-19) * 9192631770),document.getElementById("C1").value);
+  		ans = ans*Math.pow(1/((1/(6.62607015*Math.pow(10,-34) * 9192631770*9192631770 / 299792498))*Math.pow(9192631770/299792498,2)*Math.pow(9192631770,-2)/(1.380649*Math.pow(10,-23))),document.getElementById("T1").value);
+  		ans = ans*Math.pow(6.02214076*Math.pow(10,23),document.getElementById("a1").value);
+  		ans = ans*Math.pow(683*(6.62607015*Math.pow(10,-34) * 9192631770**2 / 299792498)*Math.pow(9192631770/299792498,2)*Math.pow(9192631770,3),document.getElementById("L1").value);
+  		document.getElementById("noo").value = ans;
+  	}
+  </script>
+</head>
+<body>
+<input type="text" id="no" name="no" style="width:150px" value=0>
+m
+<sup><sup><input type="number" id="m" name="m" value=0></sup></sup>
+kg
+<sup><sup><input type="number" id="kg" name="kg" value=0></sup></sup>
+s
+<sup><sup><input type="number" id="s" name="s" value=0></sup></sup>
+A
+<sup><sup><input type="number" id="A" name="A" value=0></sup></sup>
+K
+<sup><sup><input type="number" id="K" name="K" value=0></sup></sup>
+mol
+<sup><sup><input type="number" id="mol" name="mol" value=0></sup></sup>
+cd
+<sup><sup><input type="number" id="cd" name="cd" value=0></sup></sup>
+<input type="submit" value="→" onclick="sitosu()">
+<input type="submit" value="←" onclick="sutosi()">
+<input type="text" id="noo" name="noo" style="width:150px" value=0>
+l
+<sup><sup><input type="number" id="l1" name="l1" value=0></sup></sup>
+m
+<sup><sup><input type="number" id="m1" name="m1" value=0></sup></sup>
+t
+<sup><sup><input type="number" id="t1" name="t1" value=0></sup></sup>
+C
+<sup><sup><input type="number" id="C1" name="C1" value=0></sup></sup>
+T
+<sup><sup><input type="number" id="T1" name="T1" value=0></sup></sup>
+a
+<sup><sup><input type="number" id="a1" name="a1" value=0></sup></sup>
+L
+<sup><sup><input type="number" id="L1" name="L1" value=0></sup></sup>
+</body>
+</html>
