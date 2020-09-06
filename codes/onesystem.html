@@ -26,13 +26,13 @@
   		ans = ans*Math.pow(683*(6.62607015*Math.pow(10,-34) * 9192631770*9192631770 / 299792458)*Math.pow(9192631770/299792458,2)*Math.pow(9192631770,3),document.getElementById("L1").value);
   		document.getElementById("noo").value = ans;
   	} function sutosi(){
-  		document.getElementById("l1").value = document.getElementById("m").value;
-  		document.getElementById("m1").value = document.getElementById("kg").value;
-  		document.getElementById("t1").value = document.getElementById("s").value;
-  		document.getElementById("C1").value = document.getElementById("A").value;
-  		document.getElementById("T1").value = document.getElementById("K").value;
-  		document.getElementById("a1").value = document.getElementById("mol").value;
-  		document.getElementById("L1").value = document.getElementById("cd").value;
+  		document.getElementById("m").value = document.getElementById("l1").value;
+  		document.getElementById("kg").value = document.getElementById("m1").value;
+  		document.getElementById("s").value = document.getElementById("t1").value;
+  		document.getElementById("A").value = document.getElementById("C1").value;
+  		document.getElementById("K").value = document.getElementById("T1").value;
+  		document.getElementById("mol").value = document.getElementById("a1").value;
+  		document.getElementById("cd").value = document.getElementById("L1").value;
   		var ans = document.getElementById("noo").value;
   		ans = ans*Math.pow(299792458/9192631770,document.getElementById("l1").value);
   		ans = ans*Math.pow((6.62607015*Math.pow(10,-34) * 9192631770*9192631770 / 299792458),document.getElementById("m1").value);
