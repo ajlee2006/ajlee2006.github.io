@@ -18,12 +18,12 @@
   		document.getElementById("L1").value = document.getElementById("cd").value;
   		var ans = document.getElementById("no").value;
   		ans = ans*Math.pow(9192631770/299792458,document.getElementById("l1").value);
-  		ans = ans*Math.pow(1/(6.62607015*Math.pow(10,-34) * 9192631770*9192631770 / 299792458),document.getElementById("m1").value);
+  		ans = ans*Math.pow(299792458*299792458/(6.62607015*Math.pow(10,-34)*9192631770),document.getElementById("m1").value);
   		ans = ans*Math.pow(9192631770,document.getElementById("t1").value);
   		ans = ans*Math.pow(1/(1.602176634*Math.pow(10,-19) * 9192631770),document.getElementById("C1").value);
-  		ans = ans*Math.pow(1/((1/(6.62607015*Math.pow(10,-34) * 9192631770*9192631770 / 299792458))*Math.pow(9192631770/299792458,2)*Math.pow(9192631770,-2)/(1.380649*Math.pow(10,-23))),document.getElementById("T1").value);
+  		ans = ans*Math.pow(1.380649*Math.pow(10,-23)/(6.62607015*Math.pow(10,-34)*9192631770),document.getElementById("T1").value);
   		ans = ans*Math.pow(6.02214076*Math.pow(10,23),document.getElementById("a1").value);
-  		ans = ans*Math.pow(683*(6.62607015*Math.pow(10,-34) * 9192631770*9192631770 / 299792458)*Math.pow(9192631770/299792458,2)*Math.pow(9192631770,3),document.getElementById("L1").value);
+  		ans = ans*Math.pow(1/(6.62607015*Math.pow(10,-34)*9192631770*9192631770*683),document.getElementById("L1").value);
   		document.getElementById("noo").value = ans;
   	} function sutosi(){
   		document.getElementById("m").value = document.getElementById("l1").value;
@@ -35,12 +35,12 @@
   		document.getElementById("cd").value = document.getElementById("L1").value;
   		var ans = document.getElementById("noo").value;
   		ans = ans*Math.pow(299792458/9192631770,document.getElementById("l1").value);
-  		ans = ans*Math.pow((6.62607015*Math.pow(10,-34) * 9192631770*9192631770 / 299792458),document.getElementById("m1").value);
+  		ans = ans*Math.pow(1/(299792458*299792458/(6.62607015*Math.pow(10,-34)*9192631770)),document.getElementById("m1").value);
   		ans = ans*Math.pow(1/9192631770,document.getElementById("t1").value);
-  		ans = ans*Math.pow((1.602176634*Math.pow(10,-19) * 9192631770),document.getElementById("C1").value);
-  		ans = ans*Math.pow(((1/(6.62607015*Math.pow(10,-34) * 9192631770*9192631770 / 299792458))*Math.pow(9192631770/299792458,2)*Math.pow(9192631770,-2)/(1.380649*Math.pow(10,-23))),document.getElementById("T1").value);
+  		ans = ans*Math.pow(1.602176634*Math.pow(10,-19) * 9192631770,document.getElementById("C1").value);
+  		ans = ans*Math.pow(1/(1.380649*Math.pow(10,-23)/(6.62607015*Math.pow(10,-34)*9192631770)),document.getElementById("T1").value);
   		ans = ans*Math.pow(1/(6.02214076*Math.pow(10,23)),document.getElementById("a1").value);
-  		ans = ans*Math.pow(1/(683*(6.62607015*Math.pow(10,-34) * 9192631770*9192631770 / 299792458)*Math.pow(9192631770/299792458,2)*Math.pow(9192631770,3)),document.getElementById("L1").value);
+  		ans = ans*Math.pow(6.62607015*Math.pow(10,-34)*9192631770*9192631770*683,document.getElementById("L1").value);
   		document.getElementById("no").value = ans;
   	}
   </script>
