@@ -1,0 +1,1 @@
+curl -v -H "Authorization: Bot NzA0NjE4NTM0MDEyOTc3MTgz.Xqfxaw.t_W6rSTB20lcmpcxm3e8TWVcPfo" -H "User-Agent: AndewBot (http://example.com, v0.1)" -H "Content-Type: application/json" -X POST -d '{"content":"C"}' https://discord.com/api/webhooks/808124010042228747/sCf0sHAygxJ2ktUywjOQuHqYxSDjgEPMRJKVMyaQekTOulQGmwrbL5XfWL199L0PG9e9
