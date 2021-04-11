@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
   <url>
-    <loc>http://ajlee2006.github.io/</loc>
+    <loc>https://ajlee2006.github.io/</loc>
   </url>
   <url>
-    <loc>http://ajlee2006.github.io/linjaponasandbox/</loc>
+    <loc>https://ajlee2006.github.io/linjaponasandbox/</loc>
   </url>
   <url>
-    <loc>http://ajlee2006.github.io/linjaponasandbox/3.6.html</loc>
+    <loc>https://ajlee2006.github.io/linjaponasandbox/3.6.html</loc>
   </url>
   <url>
-    <loc>http://ajlee2006.github.io/linjaponasandbox/telo.html</loc>
+    <loc>https://ajlee2006.github.io/linjaponasandbox/telo.html</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/fakewiki/</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/fakewiki/bob.html</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/fakewiki/trump.html</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/virus/</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/virus/win/</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/virus/mac/</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/virus/android/</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/emptypage/</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/truevalue/</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/lanschoolblock/</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/schoolwifiblock/</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/unicodeblocks/</loc>
+  </url>
+  <url>
+    <loc>https://ajlee2006.github.io/teeline/</loc>
   </url>
 </urlset>
