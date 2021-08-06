@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Instrument abbreviations (source: IMSLP)</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for instrument.." title="English name">
+
+<table id="myTable">
+<tr>
+<th width="10%">Abbreviation
+</th>
+<th width="18%">English
+</th>
+<th width="18%">French
+</th>
+<th width="18%">German
+</th>
+<th width="18%">Italian
+</th>
+<th width="18%">Spanish
+</th></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>acc</b>
+</td>
+<td> Accordion
+</td>
+<td> Accordéon
+</td>
+<td> Akkordeon (Ziehharmonika)
+</td>
+<td> Fisarmonica
+</td>
+<td> Acordeón
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>afl</b>
+</td>
+<td> Alto flute
+</td>
+<td> Flûte alto (Flûte en sol)
+</td>
+<td> Altflöte (Altquerflöte in G)
+</td>
+<td> Flauto contralto
+</td>
+<td> Flauta alto (Flauta en sol)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>alt</b>
+</td>
+<td> Alto (voice) (contralto)
+</td>
+<td> Alto (Contralto)
+</td>
+<td> Alt
+</td>
+<td> Contralto
+</td>
+<td> Contralto
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>arp</b>
+</td>
+<td> Arpeggione
+</td>
+<td> Arpeggione
+</td>
+<td> Arpeggione
+</td>
+<td> Arpeggione
+</td>
+<td> Arpeggione
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bag</b>
+</td>
+<td> Bagpipe
+</td>
+<td> Cornemuse (Biniou)
+</td>
+<td> Dudelsack (Sackpfeife)
+</td>
+<td> Cornamusa (Zampogna)
+</td>
+<td> Gaita
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bar</b>
+</td>
+<td> Baritone (voice)
+</td>
+<td> Baryton (Bariton)
+</td>
+<td> Bariton
+</td>
+<td> Baritono
+</td>
+<td> Barítono
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bass</b>
+</td>
+<td> Bass (voice)
+</td>
+<td> Basse
+</td>
+<td> Bass
+</td>
+<td> Basso
+</td>
+<td> Bajo
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bbar</b>
+</td>
+<td> Bass baritone (voice)
+</td>
+<td> Basse-bayiton (Basse-bariton)
+</td>
+<td> Bassbariton
+</td>
+<td> Basso-baritono
+</td>
+<td> Bajo-barítono
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bc</b>
+</td>
+<td> Continuo (Basso continuo)
+</td>
+<td> Basse continue
+</td>
+<td> Generalbass
+</td>
+<td> Basso continuo
+</td>
+<td> Bajo continuo
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bcl</b>
+</td>
+<td> Bass clarinet
+</td>
+<td> Clarinette basse
+</td>
+<td> Bassklarinette
+</td>
+<td> Clarinetto basso
+</td>
+<td> Clarinete bajo
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bell</b>
+</td>
+<td> Bell (Chimes)
+</td>
+<td> Cloches
+</td>
+<td> Glocken
+</td>
+<td> Campane
+</td>
+<td> Campanas
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bfl</b>
+</td>
+<td> Bass flute
+</td>
+<td> Flûte basse
+</td>
+<td> Bassflöte (Bassquerflöte in C)
+</td>
+<td> Flauto basso
+</td>
+<td> Flauta baja
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bgtr</b>
+</td>
+<td> Bass guitar
+</td>
+<td> Guitare basse
+</td>
+<td> E-Bass
+</td>
+<td> Basso eletrrico
+</td>
+<td> Bajo elétrico
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bjo</b>
+</td>
+<td> Banjo
+</td>
+<td> Banjo
+</td>
+<td> Banjo
+</td>
+<td> Banjo
+</td>
+<td> Banjo
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bn</b>
+</td>
+<td> Bassoon
+</td>
+<td> Basson
+</td>
+<td> Fagott
+</td>
+<td> Fagoto
+</td>
+<td> Fagot
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bob</b>
+</td>
+<td> Bass oboe (Baritone oboe)
+</td>
+<td> Hautbois baryton
+</td>
+<td> Baritonoboe
+</td>
+<td> Oboe baritono
+</td>
+<td> Oboe bajo
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>br</b>
+</td>
+<td> Brass instruments
+</td>
+<td> instruments à vent de cuivres
+</td>
+<td> Blechblasinstrumente
+</td>
+<td> Strumento a fiato di ottone
+</td>
+<td> Instrumentos de viento-metal
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bryt</b>
+</td>
+<td> Baryton
+</td>
+<td> Baryton (Bariton)
+</td>
+<td> Bariton
+</td>
+<td> Baritono
+</td>
+<td> Barítono
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bstcl</b>
+</td>
+<td> Basset clarinet
+</td>
+<td> Clarinette de basset
+</td>
+<td> Bassettklarinette
+</td>
+<td> Clarinetto di bassetto
+</td>
+<td> Clarinete basset
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bsthn</b>
+</td>
+<td> Basset horn
+</td>
+<td> Cor de basset
+</td>
+<td> Bassetthorn
+</td>
+<td> Corno di bassetto
+</td>
+<td> Cuerno basset (Trompa de basset)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>bug</b>
+</td>
+<td> Bugle
+</td>
+<td> Clairon
+</td>
+<td> Signalhorn
+</td>
+<td> Corna de segnale
+</td>
+<td> Corneta
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>cbcl</b>
+</td>
+<td> Contrabass clarinet
+</td>
+<td> Clarinette contrabasse
+</td>
+<td> Kontrabassklarinette
+</td>
+<td> Clarinetto contrabbasso
+</td>
+<td> Clarinete contrabajo
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>cbn</b>
+</td>
+<td> Contrabassoon
+</td>
+<td> Contrebasson
+</td>
+<td> Kontrafagott
+</td>
+<td> Contrafagotto
+</td>
+<td> Contrafagot
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>cch</b>
+</td>
+<td> Children&#39;s chorus
+</td>
+<td> Choeur d&#39;enfants
+</td>
+<td> Kinderchor
+</td>
+<td> Coro di fanciulli
+</td>
+<td> Coro infantil (Coro de niños)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>cel</b>
+</td>
+<td> Celesta
+</td>
+<td> Célesta
+</td>
+<td> Celesta
+</td>
+<td> Celesta
+</td>
+<td> Celesta
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>ch</b>
+</td>
+<td> Mixed chorus
+</td>
+<td> Choeur mixtes
+</td>
+<td> gemischter Chor
+</td>
+<td> Coro miste
+</td>
+<td> Coro mixto
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>cimb</b>
+</td>
+<td> Cimbalom
+</td>
+<td> Cymbalum
+</td>
+<td> Zimbal
+</td>
+<td> Cimbalom
+</td>
+<td> Címbalo
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>cit</b>
+</td>
+<td> Cittern
+</td>
+<td> Cistre
+</td>
+<td> Cister (Cyther)
+</td>
+<td> Cetra (Cetara)
+</td>
+<td> Kithara (Cítara)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>cl</b>
+</td>
+<td> Clarinet
+</td>
+<td> Clarinette
+</td>
+<td> Klarinette
+</td>
+<td> Clarinetto
+</td>
+<td> Clarinete
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>clvd</b>
+</td>
+<td> Clavichord
+</td>
+<td> Clavicorde
+</td>
+<td> Klavichord
+</td>
+<td> Clavicordo
+</td>
+<td> Clavicordio
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>cm</b>
+</td>
+<td> Chalumeau
+</td>
+<td> Chalumeau
+</td>
+<td> Chalumeau
+</td>
+<td> Salmoè
+</td>
+<td> Salmoé
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>conc</b>
+</td>
+<td> Concertina
+</td>
+<td> Concertina
+</td>
+<td> Konzertina
+</td>
+<td> Concertina
+</td>
+<td> Concertina
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>crh</b>
+</td>
+<td> Crumhorn
+</td>
+<td> Cromorne
+</td>
+<td> Krummhorn
+</td>
+<td> Cromorno
+</td>
+<td> Cromorno
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>crt</b>
+</td>
+<td> Cornet
+</td>
+<td> Cornet (à pistons)
+</td>
+<td> Kornett (Ventilkornett)
+</td>
+<td> Cornetta (a pistoni)
+</td>
+<td> Cornetín (de pistones)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>crtt</b>
+</td>
+<td> Cornett (Zink)
+</td>
+<td> Cornet-à-bouquin
+</td>
+<td> Zink
+</td>
+<td> Cornetto
+</td>
+<td> Corneta
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>cv</b>
+</td>
+<td> Child&#39;s voice
+</td>
+<td> Voix d&#39;enfants
+</td>
+<td> Kinderstimme(n)
+</td>
+<td> Voce di fanciullo
+</td>
+<td> Voz de niño (Voz de infanto)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>db</b>
+</td>
+<td> Double Bass
+</td>
+<td> Contrebasse
+</td>
+<td> Kontrabass
+</td>
+<td> Contrabasso
+</td>
+<td> Contrabajo
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>dlcn</b>
+</td>
+<td> Dulcian
+</td>
+<td> Douçaine
+</td>
+<td> Dulzian
+</td>
+<td> Dulciana
+</td>
+<td> Bajón (Dulcián)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>dom</b>
+</td>
+<td> Domra
+</td>
+<td> Domra
+</td>
+<td> Domra
+</td>
+<td> Domra
+</td>
+<td> Domra
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>dulc</b>
+</td>
+<td> Dulcimer
+</td>
+<td> Psaltérion (Tympanon)
+</td>
+<td> Hackbrett
+</td>
+<td> Salterio
+</td>
+<td> Salterio (Tímpano)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>egtr</b>
+</td>
+<td> Electric guitar
+</td>
+<td> Guitarre électrique
+</td>
+<td> Elektrische Gitarre
+</td>
+<td> Chitarra elettrica
+</td>
+<td> Guitarra eléctrica
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>eh</b>
+</td>
+<td> English horn (Cor anglais)
+</td>
+<td> Cor anglais
+</td>
+<td> Englischhorn
+</td>
+<td> Corno inglese
+</td>
+<td> Corno inglés
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>elec</b>
+</td>
+<td> Electronic Instruments
+</td>
+<td> Instrument électronique
+</td>
+<td> Elektronische(s) Instrument(e)
+</td>
+<td> Strumento elettrica
+</td>
+<td> Instrumentos eléctricos
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>epf</b>
+</td>
+<td> Electric piano
+</td>
+<td> Piano électronique
+</td>
+<td> Elektronisches Piano
+</td>
+<td> Pianoforte elettrico
+</td>
+<td> Piano eléctrico
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>eq</b>
+</td>
+<td> Equal voices
+</td>
+<td> Voix égales
+</td>
+<td> gleiche Stimmen
+</td>
+<td> Voci pari
+</td>
+<td> Voces iguales
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>erhu</b>
+</td>
+<td> Erhu
+</td>
+<td> Erhu
+</td>
+<td> Erhu
+</td>
+<td> Erhu
+</td>
+<td> Erhu
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>euph</b>
+</td>
+<td> Euphonium
+</td>
+<td> Euphonium
+</td>
+<td> Euphonium
+</td>
+<td> Eufonio
+</td>
+<td> Bombardino
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>fch</b>
+</td>
+<td> Female chorus
+</td>
+<td> Choeur de femmes
+</td>
+<td> Frauenchor
+</td>
+<td> Coro femminile
+</td>
+<td> Coro femenino (Coro de mujeres)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>fda</b>
+</td>
+<td> Flute d&#39;amore (Tenor flute)
+</td>
+<td> Flûte ténor
+</td>
+<td> Tenorflöte
+</td>
+<td> Flauto tenor
+</td>
+<td> Flauta tenor
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>fgh</b>
+</td>
+<td> Flugelhorn
+</td>
+<td> Bugle (Grand bugle)
+</td>
+<td> Flügelhorn
+</td>
+<td> Flicorno soprano
+</td>
+<td> Fliscorno
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>fife</b>
+</td>
+<td> Fife
+</td>
+<td> Fifre
+</td>
+<td> Querpfeife (Militärflöte)
+</td>
+<td> Fiffaro
+</td>
+<td> Pífano
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>fl</b>
+</td>
+<td> Flute
+</td>
+<td> Flûte
+</td>
+<td> Flöte
+</td>
+<td> Flauto
+</td>
+<td> Flauta
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>flag</b>
+</td>
+<td> Flageolet
+</td>
+<td> Flageolet
+</td>
+<td> Flageolett
+</td>
+<td> Flagioletto
+</td>
+<td> Flageolet (Flajeolet)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>ghca</b>
+</td>
+<td> Glass harmonica (Bowl organ)
+</td>
+<td> Harmonica de verre (Coupes de verre)
+</td>
+<td> Glasharmonika (Gläserspiel)
+</td>
+<td> Glassarmonica (Bicchieri de vetro)
+</td>
+<td> Armónica de cristal
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>gl</b>
+</td>
+<td> Glockenspiel
+</td>
+<td> Jeu de timbres
+</td>
+<td> Glockenspiel
+</td>
+<td> Campanelli (Metallofono)
+</td>
+<td> Juego de campanas (Lira)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>gtr</b>
+</td>
+<td> Guitar
+</td>
+<td> Guitare
+</td>
+<td> Gitarre
+</td>
+<td> Chitarra
+</td>
+<td> Guitarra
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>harm</b>
+</td>
+<td> Harmonium
+</td>
+<td> Harmonium
+</td>
+<td> Harmonium
+</td>
+<td> Armonium
+</td>
+<td> Armonium
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>hca</b>
+</td>
+<td> Harmonica (Mouth Organ)
+</td>
+<td> Harmonica
+</td>
+<td> Mundharmonika
+</td>
+<td> Armonica a bocco
+</td>
+<td> Armónica de boca
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>heck</b>
+</td>
+<td> Heckelphone
+</td>
+<td> Heckelphone
+</td>
+<td> Heckelphon
+</td>
+<td> Heckelfono
+</td>
+<td> Heckelfón
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>hn</b>
+</td>
+<td> Horn
+</td>
+<td> Cor
+</td>
+<td> Horn
+</td>
+<td> Corno
+</td>
+<td> Trompa (Corno francés)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>hp</b>
+</td>
+<td> Harp
+</td>
+<td> Harpe
+</td>
+<td> Harfe
+</td>
+<td> Arpa
+</td>
+<td> Arpa
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>hpd</b>
+</td>
+<td> Harpsichord
+</td>
+<td> Clavecin
+</td>
+<td> Cembalo (Clavicembalo)
+</td>
+<td> Cembalo (Clavicembalo)
+</td>
+<td> Clavicémbalo
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>kbd</b>
+</td>
+<td> Keyboard instrument
+</td>
+<td> Instrument à clavier
+</td>
+<td> Tasteninstrument
+</td>
+<td> Strumento a tastiera
+</td>
+<td> Instrumento de tecla
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>lute</b>
+</td>
+<td> Lute
+</td>
+<td> Luth
+</td>
+<td> Laute
+</td>
+<td> Liuto
+</td>
+<td> Laúd
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>lyre</b>
+</td>
+<td> Lyre
+</td>
+<td> Lyre
+</td>
+<td> Lyra
+</td>
+<td> Lira
+</td>
+<td> Lira
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>mand</b>
+</td>
+<td> Mandolin
+</td>
+<td> Mandoline
+</td>
+<td> Mandoline
+</td>
+<td> Mandolino
+</td>
+<td> Mandolina (Mandolín)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>mar</b>
+</td>
+<td> Marimba
+</td>
+<td> Marimba
+</td>
+<td> Marimbaphon
+</td>
+<td> Marimba
+</td>
+<td> Marimba
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>mch</b>
+</td>
+<td> Male chorus
+</td>
+<td> Choeur d&#39;homme
+</td>
+<td> Männerchor
+</td>
+<td> Coro maschile
+</td>
+<td> Coro masculino (Coro de hombres)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>mez</b>
+</td>
+<td> Mezzo-soprano
+</td>
+<td> Messo-soprano
+</td>
+<td> Mezzosopran
+</td>
+<td> Mezzosoprano
+</td>
+<td> Mesosoprano (Mezzosoprano)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>mus</b>
+</td>
+<td> Musette
+</td>
+<td> Musette
+</td>
+<td> Musette de Cour
+</td>
+<td> Musette de cour
+</td>
+<td> Musette
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>nar</b>
+</td>
+<td> Narrator (Reciter)
+</td>
+<td> Narrateur
+</td>
+<td> Erzähler
+</td>
+<td> Narratore
+</td>
+<td> Narrador
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>ob</b>
+</td>
+<td> Oboe
+</td>
+<td> Hautbois
+</td>
+<td> Oboe (Hoboe)
+</td>
+<td> Oboe
+</td>
+<td> Oboe
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>oca</b>
+</td>
+<td> Ocarina
+</td>
+<td> Ocarina
+</td>
+<td> Okarina
+</td>
+<td> Ocarina
+</td>
+<td> Ocarina
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>oda</b>
+</td>
+<td> Oboe d&#39;amore
+</td>
+<td> Hautbois d&#39;amour
+</td>
+<td> Oboe d&#39;amore
+</td>
+<td> Oboe d&#39;amore
+</td>
+<td> Oboe de amor
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>om</b>
+</td>
+<td> Ondes Martenot
+</td>
+<td> Ondes Martenot
+</td>
+<td> Ondes Martenot
+</td>
+<td> Onde Martenot
+</td>
+<td> Ondas Martenot
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>oph</b>
+</td>
+<td> Ophicleide
+</td>
+<td> Ophicléide
+</td>
+<td> Ophikleide
+</td>
+<td> Ophicleide
+</td>
+<td> Oficleido
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>orch</b>
+</td>
+<td> Orchestra
+</td>
+<td> Orchestre
+</td>
+<td> Orchester
+</td>
+<td> Orchestra
+</td>
+<td> Orquesta
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>org</b>
+</td>
+<td> Organ
+</td>
+<td> Orgue
+</td>
+<td> Orgel
+</td>
+<td> Organo
+</td>
+<td> Órgano
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>oud</b>
+</td>
+<td> Oud
+</td>
+<td> Oud
+</td>
+<td> Oud
+</td>
+<td> Oud
+</td>
+<td> Laúd árabe
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pan</b>
+</td>
+<td> Pan flute (Pan-pipes)
+</td>
+<td> Flûte de Pan (Syrinx)
+</td>
+<td> Panflöte (Hirtenflöte)
+</td>
+<td> Flauto di Pan (Siringa)
+</td>
+<td> Flauta de Pan (Zampoñas)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>perc</b>
+</td>
+<td> Percussion
+</td>
+<td> instruments à percussion
+</td>
+<td> Schlaginstrument (Schlagzeug)
+</td>
+<td> Strumento a percussione
+</td>
+<td> Percusión
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pf</b>
+</td>
+<td> Piano
+</td>
+<td> Piano
+</td>
+<td> Klavier
+</td>
+<td> Pianoforte
+</td>
+<td> Piano
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pf3h</b>
+</td>
+<td> Piano 3 hands
+</td>
+<td> Piano à 3 mains
+</td>
+<td> Klavier zu 3 Händen
+</td>
+<td> Pianoforte 3 mani
+</td>
+<td> Piano a 3 manos
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pf4h</b>
+</td>
+<td> Piano 4 hands
+</td>
+<td> Piano à 4 mains
+</td>
+<td> Klavier zu 4 Händen
+</td>
+<td> Pianoforte 4 mani
+</td>
+<td> Piano a 4 manos
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pf5h</b>
+</td>
+<td> Piano 5 hands
+</td>
+<td> Piano à 5 mains
+</td>
+<td> Klavier zu 5 Händen
+</td>
+<td> Pianoforte 5 mani
+</td>
+<td> Piano a 5 manos
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pf6h</b>
+</td>
+<td> Piano 6 hands
+</td>
+<td> Piano à 6 mains
+</td>
+<td> Klavier zu 6 Händen
+</td>
+<td> Pianoforte 6 mani
+</td>
+<td> Piano a 6 manos
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pflh</b>
+</td>
+<td> Piano left hand
+</td>
+<td> Piano à main gauche
+</td>
+<td> Klavier linkshändig
+</td>
+<td> Piano di sinistra
+</td>
+<td> Piano mano izquierda
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pfped</b>
+</td>
+<td> Pedal piano
+</td>
+<td> Piano à pédalier (Clavier de pédales)
+</td>
+<td> Pedalflügel (Pedalklavier)
+</td>
+<td> Pianoforte organistico
+</td>
+<td> Piano con pedales
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pfrh</b>
+</td>
+<td> Piano right hand
+</td>
+<td> Piano à main droite
+</td>
+<td> Klavier rechtshändig
+</td>
+<td> Piano di destra
+</td>
+<td> Piano mano derecha
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>picc</b>
+</td>
+<td> Piccolo
+</td>
+<td> Petite flûte
+</td>
+<td> Kleine Flöte (Piccoloflöte)
+</td>
+<td> Flauto piccolo (Ottavino)
+</td>
+<td> Flautín (Píccolo)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pipa</b>
+</td>
+<td> Pipa
+</td>
+<td> Pipa
+</td>
+<td> Pipa
+</td>
+<td> Pipa
+</td>
+<td> Pipa
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>pk</b>
+</td>
+<td> Timpani
+</td>
+<td> Timbales
+</td>
+<td> Pauken
+</td>
+<td> Timpani
+</td>
+<td> Timbales
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>ptpt</b>
+</td>
+<td> Piccolo trumpet
+</td>
+<td> Petite trompette
+</td>
+<td> Piccolotrompete
+</td>
+<td> Trombino
+</td>
+<td> Trompeta píccolo
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>reb</b>
+</td>
+<td> Rebec
+</td>
+<td> Rebecq (Rebecquet)
+</td>
+<td> Rebec
+</td>
+<td> Rebeca (Ribeca)
+</td>
+<td> Rabé (Rebequín)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>rec</b>
+</td>
+<td> Recorder
+</td>
+<td> Flûte à bec (Flûte douce)
+</td>
+<td> Blockflöte
+</td>
+<td> Flauto dolce (Flauto a becco)
+</td>
+<td> Flauta de pico (Flauta dulce)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>sar</b>
+</td>
+<td> Sarrusophone
+</td>
+<td> Sarrusophone
+</td>
+<td> Sarrusophon
+</td>
+<td> Sarrusofono
+</td>
+<td> Sarrusofón
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>sax</b>
+</td>
+<td> Saxophone
+</td>
+<td> Saxophone
+</td>
+<td> Saxophon
+</td>
+<td> Sassofono (Saxofono)
+</td>
+<td> Saxofón
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>sheng</b>
+</td>
+<td> Sheng
+</td>
+<td> Sheng
+</td>
+<td> Sheng
+</td>
+<td> Sheng
+</td>
+<td> Sheng
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>shw</b>
+</td>
+<td> Shawm
+</td>
+<td> Chalemie
+</td>
+<td> Schalmei
+</td>
+<td> Ciaramella (Piffaro)
+</td>
+<td> Chirimía (Xirimía)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>sit</b>
+</td>
+<td> Sitar
+</td>
+<td> Sitar
+</td>
+<td> Sitar
+</td>
+<td> Sitar
+</td>
+<td> Sitar
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>skbt</b>
+</td>
+<td> Sackbut
+</td>
+<td> Sacqueboute
+</td>
+<td> Sackbutt
+</td>
+<td> Sackbut
+</td>
+<td> Sacabuche
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>sop</b>
+</td>
+<td> Soprano (voice)
+</td>
+<td> Soprano
+</td>
+<td> Sopran
+</td>
+<td> Soprano
+</td>
+<td> Soprano
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>srp</b>
+</td>
+<td> Serpent
+</td>
+<td> Serpent
+</td>
+<td> Serpent
+</td>
+<td> Serpentone
+</td>
+<td> Serpentón
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>stpt</b>
+</td>
+<td> Slide trumpet
+</td>
+<td> Trompette à couluisse
+</td>
+<td> Zugtrompete
+</td>
+<td> Tromba a tirarsi
+</td>
+<td> Trompeta de varas
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>str</b>
+</td>
+<td> String instruments
+</td>
+<td> Cordes
+</td>
+<td> Streicher
+</td>
+<td> Archi
+</td>
+<td> Instrumentos de cuerda
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>sxh</b>
+</td>
+<td> Saxhorn
+</td>
+<td> Saxhorn
+</td>
+<td> Bügelhorn
+</td>
+<td> Flicorni
+</td>
+<td> Saxhorno
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>syn</b>
+</td>
+<td> Synthesizer
+</td>
+<td> Synthétiseur
+</td>
+<td> Synthesizer
+</td>
+<td> Sintetizzatore
+</td>
+<td> Sintetizador
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>tba</b>
+</td>
+<td> Tuba
+</td>
+<td> Tuba
+</td>
+<td> Tuba
+</td>
+<td> Tuba
+</td>
+<td> Tuba
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>tbn</b>
+</td>
+<td> Trombone
+</td>
+<td> Trombone
+</td>
+<td> Posaune
+</td>
+<td> Trombone
+</td>
+<td> Trombón
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>ten</b>
+</td>
+<td> Tenor
+</td>
+<td> Ténor
+</td>
+<td> Tenor
+</td>
+<td> Tenore
+</td>
+<td> Tenor
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>thrm</b>
+</td>
+<td> Theremin
+</td>
+<td> Thérémine
+</td>
+<td> Theremin
+</td>
+<td> Theremin
+</td>
+<td> Theremín
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>timp</b>
+</td>
+<td> Timpani
+</td>
+<td> Timbales
+</td>
+<td> Pauken
+</td>
+<td> Timpani
+</td>
+<td> Timbales
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>tpt</b>
+</td>
+<td> Trumpet
+</td>
+<td> Trompette
+</td>
+<td> Trompete
+</td>
+<td> Tromba (Clarino)
+</td>
+<td> Trompeta
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>uch</b>
+</td>
+<td> Unison chorus
+</td>
+<td> Choeur unisson
+</td>
+<td> Unisonochor
+</td>
+<td> Coro unisono
+</td>
+<td> Coro unísono
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>uke</b>
+</td>
+<td> Ukelele (Ukulele)
+</td>
+<td> Ukulélé
+</td>
+<td> Ukelele
+</td>
+<td> Ukelele
+</td>
+<td> Ukelele
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>v</b>
+</td>
+<td> Voice (solo)
+</td>
+<td> Voix
+</td>
+<td> Stimme
+</td>
+<td> Voce
+</td>
+<td> Voz
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>va</b>
+</td>
+<td> Viola
+</td>
+<td> Alto
+</td>
+<td> Bratsche
+</td>
+<td> Viola
+</td>
+<td> Viola
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>vap</b>
+</td>
+<td> Viola pomposa
+</td>
+<td> Viola pomposa
+</td>
+<td> Viola pomposa
+</td>
+<td> Viola pomposa
+</td>
+<td> Viola pomposa
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>vc</b>
+</td>
+<td> Cello
+</td>
+<td> Violoncelle
+</td>
+<td> Violoncello
+</td>
+<td> Violoncello
+</td>
+<td> Violonchelo (Violoncello)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>vda</b>
+</td>
+<td> Viola d&#39;amore
+</td>
+<td> Viole d&#39;amour
+</td>
+<td> Viola d&#39;amore (Liebesgeige)
+</td>
+<td> Viola d&#39;amore
+</td>
+<td> Viola de amor
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>vib</b>
+</td>
+<td> Vibraphone
+</td>
+<td> Vibraphone
+</td>
+<td> Vibraphon
+</td>
+<td> Vibrafono
+</td>
+<td> Vibráfono
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>vie</b>
+</td>
+<td> Vielle (Hurdy-Gurdy)
+</td>
+<td> Vielle à roue (Chifonie)
+</td>
+<td> Leier (Drehleier)
+</td>
+<td> Lyra tedesca (Ghironda)
+</td>
+<td> Viola de rueda (Zanfona)
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>viol</b>
+</td>
+<td> Viol (Viola da gamba)
+</td>
+<td> Gambe (Viola da gamba)
+</td>
+<td> Gambe
+</td>
+<td> Gamba (Viola da gamba)
+</td>
+<td> Viola de gamba
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>vlne</b>
+</td>
+<td> Violone
+</td>
+<td> Violone
+</td>
+<td> Violone
+</td>
+<td> Violone
+</td>
+<td> Violone
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>vn</b>
+</td>
+<td> Violin
+</td>
+<td> Violon
+</td>
+<td> Violine (Geige)
+</td>
+<td> Violino
+</td>
+<td> Violín
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>vuv</b>
+</td>
+<td> Vuvuzela
+</td>
+<td> Vuvuzela
+</td>
+<td> Vuvuzela
+</td>
+<td> Vuvuzela
+</td>
+<td> Vuvuzela
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>vv </b>
+</td>
+<td> Voices (multiple soloists)
+</td>
+<td> Voix
+</td>
+<td> Stimmen
+</td>
+<td> Voci
+</td>
+<td> Voces
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>wag</b>
+</td>
+<td> Wagner tuba
+</td>
+<td> Tuba wagnérien
+</td>
+<td> Wagnertuba
+</td>
+<td> Tuba di Wagner
+</td>
+<td> Tuba Wagneriana
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>ww</b>
+</td>
+<td> Woodwind instruments
+</td>
+<td> Instrument à vent en bois
+</td>
+<td> Holzblasinstrument
+</td>
+<td> Strumento a fiato di legno
+</td>
+<td> Instrumentos de viento-madera
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>xiao</b>
+</td>
+<td> Xiao
+</td>
+<td> Xiao
+</td>
+<td> Xiao
+</td>
+<td> Xiao
+</td>
+<td> Xiao
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>xyl</b>
+</td>
+<td> Xylophone
+</td>
+<td> Xylophone (Harmonica de bois)
+</td>
+<td> Xylophon
+</td>
+<td> Xilofono (Silofono)
+</td>
+<td> Xilófono
+</td></tr>
+<tr>
+<td bgcolor="#CCFFCC"><b>zith</b>
+</td>
+<td> Zither
+</td>
+<td> Cithare
+</td>
+<td> Zither
+</td>
+<td> Cetra da tavola
+</td>
+<td> Cítara
+</td></tr></table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
