@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>#TeamSeas calculator</title>
+  </head>
+  <body onload="load()">
+    <h1>#TeamSeas calculator</h1>
+    <input type="number" id="amountfr" placeholder="Amount of money">
+    <select id="currency">
+    </select>
+    <select id="units">
+    </select>
+    <button onclick="test()">Calculate</button>
+    <p id="t"></p>
+    <script>
+      function load() {
+        document.getElementById("amountfr").value = "1";
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET","https://api.exchangerate-api.com/v4/latest/USD", false);
+        xmlHttp.send(null);
+        var currencies = JSON.parse(xmlHttp.responseText)['rates'];
+        var keys = Object.keys(currencies);
+        var dropdown = document.getElementById("currency");
+        for(var i = 0; i < keys.length; i++) {
+            var opt = keys[i];
+            var el = document.createElement("option");
+            el.textContent = opt;
+            el.value = opt;
+            dropdown.appendChild(el);
+        }
+        dropdown.options[125].selected = true;
+
+
+        var units = ['tonne', 'kilogram', 'gram', 'milligram', 'microgram', 'imperial ton', 'US ton', 'stone', 'pound', 'ounce']
+        var dropdown = document.getElementById("units");
+        for(var i = 0; i < units.length; i++) {
+            var opt = units[i];
+            var el = document.createElement("option");
+            el.textContent = opt;
+            el.value = opt;
+            dropdown.appendChild(el);
+        }
+        dropdown.options[1].selected = true;
+      }
+
+
+
+
+      function test() {
+        var currency = document.getElementById("currency");
+        var units = document.getElementById("units");
+        var fr = currency.options[currency.selectedIndex].text;
+        var amountfr = document.getElementById("amountfr").value;
+
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET","https://api.exchangerate-api.com/v4/latest/" + fr, false);
+        xmlHttp.send(null);
+
+        var unitvalues = [0.00045359237, 0.45359237, 453.59237, 453592.37, 453592370, 1/2240, 0.0005, 1/14, 1, 16]; 
+
+        var currencies = JSON.parse(xmlHttp.responseText)['rates'];
+
+
+        var poundperfr = currencies["USD"];
+        var pounds = poundperfr*amountfr;
+        var final = pounds*unitvalues[units.selectedIndex]
+
+        
+
+        
+        document.getElementById("t").innerHTML = amountfr + " " + fr + " will remove " + final + " " + units.options[units.selectedIndex].text + " of trash";
+      }
+    </script>
+  </body>
+</html>
