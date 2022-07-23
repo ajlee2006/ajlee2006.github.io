@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+	<head>
+		<title>1995 Map on Leaflet</title>
+		<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+		<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+		<!-- <style>
+			:root {
+				--map-tiles-filter:  brightness(0.6) invert(1) contrast(3) hue-rotate(200deg) saturate(0.3) brightness(0.7);
+			}
+
+			@media (prefers-color-scheme: dark) {
+				.map-tiles{
+					filter:  var(--map-tiles-filter, none);
+				}
+			}
+		</style> -->
+	</head>
+	<body style="height: 95%">
+		<div id="map" style="width: 100%; height:100%"></div>
+		<script>
+			// center of the map
+			var center = [1.35, 103.83];
+
+			// Create the map
+			var map = new L.map('map').setView(center, 12);
+
+			// Set up the OSM layer
+			new L.tileLayer(
+			  'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			    attribution: '',
+			    maxZoom: 18,
+			    className: 'map-tiles'
+			  }).addTo(map);
+
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (1).jpg', [[1.33701481481481,103.833794411765], [1.32783037037037,103.840531176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (2).jpg', [[1.33701481481481,103.840531176471], [1.32783037037037,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (3).jpg', [[1.33701481481481,103.847267941176], [1.32783037037037,103.854004705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (4).jpg', [[1.33701481481481,103.854004705882], [1.32783037037037,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (5).jpg', [[1.32783037037037,103.833794411765], [1.31864592592593,103.840531176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (6).jpg', [[1.32783037037037,103.840531176471], [1.31864592592593,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (7).jpg', [[1.32783037037037,103.847267941176], [1.31864592592593,103.854004705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (8).jpg', [[1.32783037037037,103.854004705882], [1.31864592592593,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (9).jpg', [[1.31864592592593,103.793373823529], [1.30946148148148,103.800110588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (10).jpg', [[1.31864592592593,103.800110588235], [1.30946148148148,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (11).jpg', [[1.31864592592593,103.806847352941], [1.30946148148148,103.813584117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (12).jpg', [[1.31864592592593,103.813584117647], [1.30946148148148,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (13).jpg', [[1.31864592592593,103.820320882353], [1.30946148148148,103.827057647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (14).jpg', [[1.31864592592593,103.827057647059], [1.30946148148148,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (15).jpg', [[1.31864592592593,103.833794411765], [1.30946148148148,103.840531176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (16).jpg', [[1.31864592592593,103.840531176471], [1.30946148148148,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (17).jpg', [[1.31864592592593,103.847267941176], [1.30946148148148,103.854004705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (18).jpg', [[1.31864592592593,103.854004705882], [1.30946148148148,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (19).jpg', [[1.30946148148148,103.793373823529], [1.30027703703704,103.800110588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (20).jpg', [[1.30946148148148,103.800110588235], [1.30027703703704,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (21).jpg', [[1.30946148148148,103.806847352941], [1.30027703703704,103.813584117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (22).jpg', [[1.30946148148148,103.813584117647], [1.30027703703704,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (23).jpg', [[1.30946148148148,103.820320882353], [1.30027703703704,103.827057647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (24).jpg', [[1.30946148148148,103.827057647059], [1.30027703703704,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (25).jpg', [[1.30946148148148,103.833794411765], [1.30027703703704,103.840531176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (26).jpg', [[1.30946148148148,103.840531176471], [1.30027703703704,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (27).jpg', [[1.30946148148148,103.847267941176], [1.30027703703704,103.854004705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (28).jpg', [[1.30946148148148,103.854004705882], [1.30027703703704,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (29).jpg', [[1.30027703703704,103.793373823529], [1.29109259259259,103.800110588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (30).jpg', [[1.30027703703704,103.800110588235], [1.29109259259259,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (31).jpg', [[1.30027703703704,103.806847352941], [1.29109259259259,103.813584117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (32).jpg', [[1.30027703703704,103.813584117647], [1.29109259259259,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (33).jpg', [[1.30027703703704,103.820320882353], [1.29109259259259,103.827057647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (34).jpg', [[1.30027703703704,103.827057647059], [1.29109259259259,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (35).jpg', [[1.30027703703704,103.833794411765], [1.29109259259259,103.840531176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (36).jpg', [[1.30027703703704,103.840531176471], [1.29109259259259,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (37).jpg', [[1.30027703703704,103.847267941176], [1.29109259259259,103.854004705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (38).jpg', [[1.30027703703704,103.854004705882], [1.29109259259259,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (39).jpg', [[1.29109259259259,103.793373823529], [1.28190814814815,103.800110588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (40).jpg', [[1.29109259259259,103.800110588235], [1.28190814814815,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (41).jpg', [[1.29109259259259,103.806847352941], [1.28190814814815,103.813584117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (42).jpg', [[1.29109259259259,103.813584117647], [1.28190814814815,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (43).jpg', [[1.29109259259259,103.820320882353], [1.28190814814815,103.827057647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (44).jpg', [[1.29109259259259,103.827057647059], [1.28190814814815,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (45).jpg', [[1.29109259259259,103.833794411765], [1.28190814814815,103.840531176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (46).jpg', [[1.29109259259259,103.840531176471], [1.28190814814815,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (47).jpg', [[1.29109259259259,103.847267941176], [1.28190814814815,103.854004705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (48).jpg', [[1.29109259259259,103.854004705882], [1.28190814814815,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (49).jpg', [[1.28190814814815,103.833794411765], [1.2727237037037,103.840531176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (50).jpg', [[1.28190814814815,103.840531176471], [1.2727237037037,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (51).jpg', [[1.28190814814815,103.847267941176], [1.2727237037037,103.854004705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (52).jpg', [[1.28190814814815,103.854004705882], [1.2727237037037,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (53).jpg', [[1.2727237037037,103.833794411765], [1.26353925925926,103.840531176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (54).jpg', [[1.2727237037037,103.840531176471], [1.26353925925926,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (55).jpg', [[1.2727237037037,103.847267941176], [1.26353925925926,103.854004705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (56).jpg', [[1.2727237037037,103.854004705882], [1.26353925925926,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (57).jpg', [[1.46559703703704,103.779900294118], [1.44722814814815,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (58).jpg', [[1.46559703703704,103.793373823529], [1.44722814814815,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (59).jpg', [[1.46559703703704,103.806847352941], [1.44722814814815,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (60).jpg', [[1.46559703703704,103.820320882353], [1.44722814814815,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (61).jpg', [[1.46559703703704,103.833794411765], [1.44722814814815,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (62).jpg', [[1.46559703703704,103.847267941176], [1.44722814814815,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (63).jpg', [[1.44722814814815,103.685585588235], [1.42885925925926,103.699059117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (64).jpg', [[1.44722814814815,103.699059117647], [1.42885925925926,103.712532647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (65).jpg', [[1.44722814814815,103.712532647059], [1.42885925925926,103.726006176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (66).jpg', [[1.44722814814815,103.726006176471], [1.42885925925926,103.739479705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (67).jpg', [[1.44722814814815,103.739479705882], [1.42885925925926,103.752953235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (68).jpg', [[1.44722814814815,103.752953235294], [1.42885925925926,103.766426764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (69).jpg', [[1.44722814814815,103.766426764706], [1.42885925925926,103.779900294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (70).jpg', [[1.44722814814815,103.779900294118], [1.42885925925926,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (71).jpg', [[1.44722814814815,103.793373823529], [1.42885925925926,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (72).jpg', [[1.44722814814815,103.806847352941], [1.42885925925926,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (73).jpg', [[1.44722814814815,103.820320882353], [1.42885925925926,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (74).jpg', [[1.44722814814815,103.833794411765], [1.42885925925926,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (75).jpg', [[1.44722814814815,103.847267941176], [1.42885925925926,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (76).jpg', [[1.44722814814815,103.860741470588], [1.42885925925926,103.874215]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (77).jpg', [[1.42885925925926,103.685585588235], [1.41049037037037,103.699059117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (78).jpg', [[1.42885925925926,103.699059117647], [1.41049037037037,103.712532647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (79).jpg', [[1.42885925925926,103.712532647059], [1.41049037037037,103.726006176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (80).jpg', [[1.42885925925926,103.726006176471], [1.41049037037037,103.739479705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (81).jpg', [[1.42885925925926,103.739479705882], [1.41049037037037,103.752953235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (82).jpg', [[1.42885925925926,103.752953235294], [1.41049037037037,103.766426764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (83).jpg', [[1.42885925925926,103.766426764706], [1.41049037037037,103.779900294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (84).jpg', [[1.42885925925926,103.779900294118], [1.41049037037037,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (85).jpg', [[1.42885925925926,103.793373823529], [1.41049037037037,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (86).jpg', [[1.42885925925926,103.806847352941], [1.41049037037037,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (87).jpg', [[1.42885925925926,103.820320882353], [1.41049037037037,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (88).jpg', [[1.42885925925926,103.833794411765], [1.41049037037037,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (89).jpg', [[1.42885925925926,103.847267941176], [1.41049037037037,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (90).jpg', [[1.42885925925926,103.860741470588], [1.41049037037037,103.874215]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (91).jpg', [[1.42885925925926,103.874215], [1.41049037037037,103.887688529412]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (92).jpg', [[1.42885925925926,103.887688529412], [1.41049037037037,103.901162058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (93).jpg', [[1.42885925925926,103.901162058824], [1.41049037037037,103.914635588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (94).jpg', [[1.41049037037037,103.685585588235], [1.39212148148148,103.699059117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (95).jpg', [[1.41049037037037,103.699059117647], [1.39212148148148,103.712532647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (96).jpg', [[1.41049037037037,103.712532647059], [1.39212148148148,103.726006176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (97).jpg', [[1.41049037037037,103.726006176471], [1.39212148148148,103.739479705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (98).jpg', [[1.41049037037037,103.739479705882], [1.39212148148148,103.752953235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (99).jpg', [[1.41049037037037,103.752953235294], [1.39212148148148,103.766426764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (100).jpg', [[1.41049037037037,103.766426764706], [1.39212148148148,103.779900294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (101).jpg', [[1.41049037037037,103.779900294118], [1.39212148148148,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (102).jpg', [[1.41049037037037,103.793373823529], [1.39212148148148,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (103).jpg', [[1.41049037037037,103.806847352941], [1.39212148148148,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (104).jpg', [[1.41049037037037,103.820320882353], [1.39212148148148,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (105).jpg', [[1.41049037037037,103.833794411765], [1.39212148148148,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (106).jpg', [[1.41049037037037,103.847267941176], [1.39212148148148,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (107).jpg', [[1.41049037037037,103.860741470588], [1.39212148148148,103.874215]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (108).jpg', [[1.41049037037037,103.874215], [1.39212148148148,103.887688529412]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (109).jpg', [[1.41049037037037,103.887688529412], [1.39212148148148,103.901162058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (110).jpg', [[1.41049037037037,103.901162058824], [1.39212148148148,103.914635588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (111).jpg', [[1.41049037037037,103.914635588235], [1.39212148148148,103.928109117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (112).jpg', [[1.39212148148148,103.672112058824], [1.37375259259259,103.685585588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (113).jpg', [[1.39212148148148,103.685585588235], [1.37375259259259,103.699059117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (114).jpg', [[1.39212148148148,103.699059117647], [1.37375259259259,103.712532647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (115).jpg', [[1.39212148148148,103.712532647059], [1.37375259259259,103.726006176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (116).jpg', [[1.39212148148148,103.726006176471], [1.37375259259259,103.739479705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (117).jpg', [[1.39212148148148,103.739479705882], [1.37375259259259,103.752953235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (118).jpg', [[1.39212148148148,103.752953235294], [1.37375259259259,103.766426764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (119).jpg', [[1.39212148148148,103.766426764706], [1.37375259259259,103.779900294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (120).jpg', [[1.39212148148148,103.779900294118], [1.37375259259259,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (121).jpg', [[1.39212148148148,103.793373823529], [1.37375259259259,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (122).jpg', [[1.39212148148148,103.806847352941], [1.37375259259259,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (123).jpg', [[1.39212148148148,103.820320882353], [1.37375259259259,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (124).jpg', [[1.39212148148148,103.833794411765], [1.37375259259259,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (125).jpg', [[1.39212148148148,103.847267941176], [1.37375259259259,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (126).jpg', [[1.39212148148148,103.860741470588], [1.37375259259259,103.874215]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (127).jpg', [[1.39212148148148,103.874215], [1.37375259259259,103.887688529412]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (128).jpg', [[1.39212148148148,103.887688529412], [1.37375259259259,103.901162058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (129).jpg', [[1.39212148148148,103.901162058824], [1.37375259259259,103.914635588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (130).jpg', [[1.39212148148148,103.914635588235], [1.37375259259259,103.928109117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (131).jpg', [[1.39212148148148,103.928109117647], [1.37375259259259,103.941582647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (132).jpg', [[1.39212148148148,103.941582647059], [1.37375259259259,103.955056176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (133).jpg', [[1.39212148148148,103.955056176471], [1.37375259259259,103.968529705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (134).jpg', [[1.39212148148148,103.968529705882], [1.37375259259259,103.982003235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (135).jpg', [[1.39212148148148,103.982003235294], [1.37375259259259,103.995476764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (136).jpg', [[1.39212148148148,103.995476764706], [1.37375259259259,104.008950294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (137).jpg', [[1.37375259259259,103.672112058824], [1.3553837037037,103.685585588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (138).jpg', [[1.37375259259259,103.685585588235], [1.3553837037037,103.699059117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (139).jpg', [[1.37375259259259,103.699059117647], [1.3553837037037,103.712532647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (140).jpg', [[1.37375259259259,103.712532647059], [1.3553837037037,103.726006176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (141).jpg', [[1.37375259259259,103.726006176471], [1.3553837037037,103.739479705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (142).jpg', [[1.37375259259259,103.739479705882], [1.3553837037037,103.752953235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (143).jpg', [[1.37375259259259,103.752953235294], [1.3553837037037,103.766426764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (144).jpg', [[1.37375259259259,103.766426764706], [1.3553837037037,103.779900294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (145).jpg', [[1.37375259259259,103.779900294118], [1.3553837037037,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (146).jpg', [[1.37375259259259,103.793373823529], [1.3553837037037,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (147).jpg', [[1.37375259259259,103.806847352941], [1.3553837037037,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (148).jpg', [[1.37375259259259,103.820320882353], [1.3553837037037,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (149).jpg', [[1.37375259259259,103.833794411765], [1.3553837037037,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (150).jpg', [[1.37375259259259,103.847267941176], [1.3553837037037,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (151).jpg', [[1.37375259259259,103.860741470588], [1.3553837037037,103.874215]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (152).jpg', [[1.37375259259259,103.874215], [1.3553837037037,103.887688529412]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (153).jpg', [[1.37375259259259,103.887688529412], [1.3553837037037,103.901162058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (154).jpg', [[1.37375259259259,103.901162058824], [1.3553837037037,103.914635588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (155).jpg', [[1.37375259259259,103.914635588235], [1.3553837037037,103.928109117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (156).jpg', [[1.37375259259259,103.928109117647], [1.3553837037037,103.941582647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (157).jpg', [[1.37375259259259,103.941582647059], [1.3553837037037,103.955056176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (158).jpg', [[1.37375259259259,103.955056176471], [1.3553837037037,103.968529705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (159).jpg', [[1.37375259259259,103.968529705882], [1.3553837037037,103.982003235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (160).jpg', [[1.37375259259259,103.982003235294], [1.3553837037037,103.995476764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (161).jpg', [[1.37375259259259,103.995476764706], [1.3553837037037,104.008950294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (162).jpg', [[1.3553837037037,103.672112058824], [1.33701481481481,103.685585588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (163).jpg', [[1.3553837037037,103.685585588235], [1.33701481481481,103.699059117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (164).jpg', [[1.3553837037037,103.699059117647], [1.33701481481481,103.712532647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (165).jpg', [[1.3553837037037,103.712532647059], [1.33701481481481,103.726006176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (166).jpg', [[1.3553837037037,103.726006176471], [1.33701481481481,103.739479705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (167).jpg', [[1.3553837037037,103.739479705882], [1.33701481481481,103.752953235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (168).jpg', [[1.3553837037037,103.752953235294], [1.33701481481481,103.766426764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (169).jpg', [[1.3553837037037,103.766426764706], [1.33701481481481,103.779900294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (170).jpg', [[1.3553837037037,103.779900294118], [1.33701481481481,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (171).jpg', [[1.3553837037037,103.793373823529], [1.33701481481481,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (172).jpg', [[1.3553837037037,103.806847352941], [1.33701481481481,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (173).jpg', [[1.3553837037037,103.820320882353], [1.33701481481481,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (174).jpg', [[1.3553837037037,103.833794411765], [1.33701481481481,103.847267941176]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (175).jpg', [[1.3553837037037,103.847267941176], [1.33701481481481,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (176).jpg', [[1.3553837037037,103.860741470588], [1.33701481481481,103.874215]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (177).jpg', [[1.3553837037037,103.874215], [1.33701481481481,103.887688529412]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (178).jpg', [[1.3553837037037,103.887688529412], [1.33701481481481,103.901162058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (179).jpg', [[1.3553837037037,103.901162058824], [1.33701481481481,103.914635588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (180).jpg', [[1.3553837037037,103.914635588235], [1.33701481481481,103.928109117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (181).jpg', [[1.3553837037037,103.928109117647], [1.33701481481481,103.941582647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (182).jpg', [[1.3553837037037,103.941582647059], [1.33701481481481,103.955056176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (183).jpg', [[1.3553837037037,103.955056176471], [1.33701481481481,103.968529705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (184).jpg', [[1.3553837037037,103.968529705882], [1.33701481481481,103.982003235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (185).jpg', [[1.3553837037037,103.982003235294], [1.33701481481481,103.995476764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (186).jpg', [[1.3553837037037,103.995476764706], [1.33701481481481,104.008950294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (187).jpg', [[1.33701481481481,103.672112058824], [1.31864592592593,103.685585588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (188).jpg', [[1.33701481481481,103.685585588235], [1.31864592592593,103.699059117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (189).jpg', [[1.33701481481481,103.699059117647], [1.31864592592593,103.712532647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (190).jpg', [[1.33701481481481,103.712532647059], [1.31864592592593,103.726006176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (191).jpg', [[1.33701481481481,103.726006176471], [1.31864592592593,103.739479705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (192).jpg', [[1.33701481481481,103.739479705882], [1.31864592592593,103.752953235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (193).jpg', [[1.33701481481481,103.752953235294], [1.31864592592593,103.766426764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (194).jpg', [[1.33701481481481,103.766426764706], [1.31864592592593,103.779900294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (195).jpg', [[1.33701481481481,103.779900294118], [1.31864592592593,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (196).jpg', [[1.33701481481481,103.793373823529], [1.31864592592593,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (197).jpg', [[1.33701481481481,103.806847352941], [1.31864592592593,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (198).jpg', [[1.33701481481481,103.820320882353], [1.31864592592593,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (199).jpg', [[1.33701481481481,103.860741470588], [1.31864592592593,103.874215]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (200).jpg', [[1.33701481481481,103.874215], [1.31864592592593,103.887688529412]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (201).jpg', [[1.33701481481481,103.887688529412], [1.31864592592593,103.901162058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (202).jpg', [[1.33701481481481,103.901162058824], [1.31864592592593,103.914635588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (203).jpg', [[1.33701481481481,103.914635588235], [1.31864592592593,103.928109117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (204).jpg', [[1.33701481481481,103.928109117647], [1.31864592592593,103.941582647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (205).jpg', [[1.33701481481481,103.941582647059], [1.31864592592593,103.955056176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (206).jpg', [[1.33701481481481,103.955056176471], [1.31864592592593,103.968529705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (207).jpg', [[1.33701481481481,103.968529705882], [1.31864592592593,103.982003235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (208).jpg', [[1.33701481481481,103.982003235294], [1.31864592592593,103.995476764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (209).jpg', [[1.31864592592593,103.699059117647], [1.30027703703704,103.712532647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (210).jpg', [[1.31864592592593,103.712532647059], [1.30027703703704,103.726006176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (211).jpg', [[1.31864592592593,103.726006176471], [1.30027703703704,103.739479705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (212).jpg', [[1.31864592592593,103.739479705882], [1.30027703703704,103.752953235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (213).jpg', [[1.31864592592593,103.752953235294], [1.30027703703704,103.766426764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (214).jpg', [[1.31864592592593,103.766426764706], [1.30027703703704,103.779900294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (215).jpg', [[1.31864592592593,103.779900294118], [1.30027703703704,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (216).jpg', [[1.31864592592593,103.860741470588], [1.30027703703704,103.874215]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (217).jpg', [[1.31864592592593,103.874215], [1.30027703703704,103.887688529412]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (218).jpg', [[1.31864592592593,103.887688529412], [1.30027703703704,103.901162058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (219).jpg', [[1.31864592592593,103.901162058824], [1.30027703703704,103.914635588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (220).jpg', [[1.31864592592593,103.914635588235], [1.30027703703704,103.928109117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (221).jpg', [[1.31864592592593,103.928109117647], [1.30027703703704,103.941582647059]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (222).jpg', [[1.31864592592593,103.941582647059], [1.30027703703704,103.955056176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (223).jpg', [[1.31864592592593,103.955056176471], [1.30027703703704,103.968529705882]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (224).jpg', [[1.31864592592593,103.968529705882], [1.30027703703704,103.982003235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (225).jpg', [[1.31864592592593,103.982003235294], [1.30027703703704,103.995476764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (226).jpg', [[1.30027703703704,103.739479705882], [1.28190814814815,103.752953235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (227).jpg', [[1.30027703703704,103.752953235294], [1.28190814814815,103.766426764706]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (228).jpg', [[1.30027703703704,103.766426764706], [1.28190814814815,103.779900294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (229).jpg', [[1.30027703703704,103.779900294118], [1.28190814814815,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (230).jpg', [[1.30027703703704,103.860741470588], [1.28190814814815,103.874215]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (231).jpg', [[1.30027703703704,103.874215], [1.28190814814815,103.887688529412]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (232).jpg', [[1.30027703703704,103.887688529412], [1.28190814814815,103.901162058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (233).jpg', [[1.30027703703704,103.901162058824], [1.28190814814815,103.914635588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (234).jpg', [[1.28190814814815,103.779900294118], [1.26353925925926,103.793373823529]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (235).jpg', [[1.28190814814815,103.793373823529], [1.26353925925926,103.806847352941]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (236).jpg', [[1.28190814814815,103.806847352941], [1.26353925925926,103.820320882353]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (237).jpg', [[1.28190814814815,103.820320882353], [1.26353925925926,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (238).jpg', [[1.28190814814815,103.860741470588], [1.26353925925926,103.874215]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (239).jpg', [[1.42885925925926,103.658638529412], [1.39212148148148,103.685585588235]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (240).jpg', [[1.42885925925926,103.928109117647], [1.39212148148148,103.955056176471]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (241).jpg', [[1.42885925925926,103.955056176471], [1.39212148148148,103.982003235294]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (242).jpg', [[1.42885925925926,103.982003235294], [1.39212148148148,104.008950294118]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (243).jpg', [[1.39212148148148,103.618217941176], [1.3553837037037,103.645165]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (244).jpg', [[1.39212148148148,103.645165], [1.3553837037037,103.672112058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (245).jpg', [[1.3553837037037,103.618217941176], [1.31864592592593,103.645165]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (246).jpg', [[1.3553837037037,103.645165], [1.31864592592593,103.672112058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (247).jpg', [[1.31864592592593,103.618217941176], [1.28190814814815,103.645165]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (248).jpg', [[1.31864592592593,103.645165], [1.28190814814815,103.672112058824]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (249).jpg', [[1.31864592592593,103.672112058824], [1.28190814814815,103.699059117647]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (250).jpg', [[1.26353925925926,103.806847352941], [1.22680148148148,103.833794411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (251).jpg', [[1.26353925925926,103.833794411765], [1.22680148148148,103.860741470588]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (252).jpg', [[1.42885925925926,104.008950294118], [1.3553837037037,104.062844411765]], {opacity: 0.6}).addTo(map);
+			new L.imageOverlay('https://onemap.gov.sg/hm/1995/1995 (253).jpg', [[1.42885925925926,104.062844411765], [1.3553837037037,104.116738529412]], {opacity: 0.6}).addTo(map);
+		</script>
+	</body>
+</html> 
