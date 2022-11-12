@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grade 8 Horn Scales</title>
+	<style>
+		span, button {
+			font-family: sans-serif;
+			font-size: 7vw;
+		}
+	</style>
+</head>
+<body>
+	<span id="name"></span><br><p/>
+	<span id="tempo"></span><br><p/>
+	<button onclick="generate()">New</button>
+	<script>
+		function generate() {
+			// I typed the following in Excel and used TEXTJOIN to add commas between them
+			const keys = "C;F,A;Bb,E,D,Eb;A,C,Bb,C;F,A;Bb,E,D,F;Bb;D;Eb,F,A;Bb".split(",");
+			const modes = "major;harmonic minor;melodic minor,major;harmonic minor;melodic minor;chromatic,major,harmonic minor,major,chromatic;whole-tone,whole-tone,major;minor,major;minor,major,minor,dominant seventh,diminished seventh,diminished seventh".split(",");
+			const types = "scale,scale,scale,scale,scale in thirds,scale,scale,arpeggio,arpeggio,arpeggio,arpeggio,arpeggio,arpeggio,arpeggio".split(",");
+			const ranges = "2 octaves,3 octaves,extended-range: E3-B5-C#3-E3,extended-range: D3-E5-A2-D3,2 octaves,2 octaves,3 octaves,2 octaves,3 octaves,extended-range: E3-B5-E3,extended-range: D3-D5-A2-D3,2 octaves,2 octaves,3 octaves".split(",");
+			const articulations = "legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred,legato-tongued;staccato;slurred".split(",");
+			const tempos = "2=120,2=120,2=120,2=120,2=112,2=120,2=120,3=48,3=48,2=72,2=73,2=74,2=75,2=76".split(",");
+			const strs = [];
+			const stempos = [];
+			for (let i in keys) for (let key in keys[i].split(";")) for (let mode in modes[i].split(";")) for (let type in types[i].split(";")) for (let range in ranges[i].split(";")) for (let articulation in articulations[i].split(";")) for (let tempo in tempos[i].split(";")) {
+				strs.push(keys[i].split(";")[key] + " " + modes[i].split(";")[mode] + " " + types[i].split(";")[type] + " (" + ranges[i].split(";")[range] + "), " + articulations[i].split(";")[articulation]);
+				stempos.push(tempos[i]);
+			}
+			const index = Math.floor(Math.random()*strs.length);
+			document.getElementById("name").innerHTML = strs[index];
+			document.getElementById("tempo").innerHTML = stempos[index].replace("2=", "♩ = ").replace("3=", "♩. = ");
+		} generate();
+	</script>
+</body>
+</html>
