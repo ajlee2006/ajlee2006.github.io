@@ -1,0 +1,70 @@
+<!doctype html>
+	<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		@font-face {
+    font-family: thefont;
+    src: url("DK Sugary Pancake.otf") format("opentype");
+}
+		#whitecard {
+			position:absolute;
+			border: 1px solid black;
+			border-radius: 2vw;
+  width: 30%;
+  height: 40vw; 
+  background: white;
+transform: rotate(12deg) translate(45vw, 10vw);
+color: black;
+z-index: 50;
+		}
+
+		#greencard {
+			position:absolute;
+			border: 1px solid black;
+			border-radius: 2vw;
+  width: 30%;
+  height: 40vw; 
+  background: #159B90;
+transform: rotate(350deg) translate(10vw, 10vw);
+color: white;
+		}
+
+		p, img {
+			font-family: thefont, sans-serif;
+			line-height: 1.5;
+			position:absolute;
+			padding: 1.5vw ;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="greencard">
+		<p id="greentext" style="font-size:2.5vw;top: 0; left: 1.5vw;"></p>
+		<p style="font-size: 1.5vw;bottom: 0; left: 1.5vw;">Only at NUS High</p>
+		<img src="nushicon.png" style="height:6vw;bottom: 1vw; right: 1vw; ">
+	</div>
+	<div id="whitecard">
+		<p id="whitetext" style="font-size:2.5vw;top: 0; left: 1.5vw;"></p>
+		<p style="font-size: 1.5vw;bottom: 0; left: 1.5vw;">Only at NUS High</p>
+		<img src="nushicon.png" style="height:6vw;bottom: 1vw; right: 1vw;   filter: grayscale(100%) contrast(500%) brightness(50%) contrast(500%) invert() brightness(90%) contrast(1000%) ">
+	</div>
+	<button id="asdhuoi" style="font-family: thefont, sans-serif; font-size:1.5vw; padding: 1vw; position:absolute; transform: translate(29vw, 50vw);">New All</button>
+	<script>
+		function newgreen() {
+			var greens = ['Morning assembly should be replaced with<br>＿＿＿＿＿＿＿.', 'NUS High teachers just love to give their students<br>＿＿＿＿＿＿＿.        ', 'Sorry cher, I didn’t do my homework because of<br>＿＿＿＿＿＿＿.', 'Sorry I was late because of<br>＿＿＿＿＿＿＿.', 'The acid spill in the Chemistry lab caused<br>＿＿＿＿＿＿＿.', 'The fire alarm went off again today because of<br>＿＿＿＿＿＿＿.', 'The one thing every student can appreciate is<br>＿＿＿＿＿＿＿.', 'The thing I love most about NUS High is<br>＿＿＿＿＿＿＿.', 'There is nothing worse than<br>＿＿＿＿＿＿＿.', 'What keeps me up at night?', 'What’s an NUS High student worrying about now?', 'What helps teachers unwind?', 'Channel Pi presents<br>＿＿＿＿＿＿＿<br>the story of<br>＿＿＿＿＿＿＿.', 'I got banned from OSAP/SEP beacuse of<br>＿＿＿＿＿＿＿.', '＿＿＿＿＿＿＿<br>ain’t nobody got time for that.', 'I won a gold in<br>＿＿＿＿＿＿＿<br>olympiad.', 'I got accepted into OSAP because<br>＿＿＿＿＿＿＿.', 'I spent all my edusave on<br>＿＿＿＿＿＿＿.', 'Why are you not in full formal?', 'During ACE, I like to think about<br>＿＿＿＿＿＿＿.'];
+			document.getElementById("greentext").innerHTML = greens[Math.floor(Math.random()*greens.length)];
+		}
+		function newwhite() {
+			var whites = ['“High functioning sociopaths.” -Sherlock', '100 digits of pi.', '5 honours.', 'ACE.', 'A locked classroom.', 'A 5.1 CAP.', 'Aesthetics appreciation program.', 'Anime.', 'AppVenture.', 'ARP.', 'Assembly.', 'Backside attack. SN2.', 'Bioethics.', 'NUS High.', 'Blue forms.', 'Boarding.', 'Bowling Car.', 'Boys.', 'Breaking a burette.', 'Bringing your phone into exam venue.', 'Broken lifts.', 'Building indoor sports hall.', 'Caffeine overdose.', 'Chairs of NUSH.', 'Chem Cat.', 'Cleaning song.', 'Compulsory music module.', 'Compulsory study time.', 'Computer Science.', 'Concourse being on the 3rd floor.', 'EXCITE.', 'Cross Country.', 'Da Vinci.', 'Teachers.', 'DSA camp T-shirts.', 'Eating at UTown.', 'English language modules.', 'eSpace.', 'Failing everything.', 'Forgetting your tie and badge.', 'Formal uniform.', 'Free-Body diagrams.', 'Frisbee.', 'Getting penalised for significant figures.', 'Getting stuck in the turnstile.', 'Girls.', 'Gold for every olympiad.', 'Group projects.', 'Having 2 bus-stops.', 'Holiday due to haze.', 'Honours.', 'House points.', 'Interest groups.', 'Junior olympiads.', 'Juniors.', 'Lab safety briefing.', 'Last minute mugging.', 'Library emails.', 'Lunch costing more than my CAP.', 'Majors.', 'Mass dance.', 'Mentor representatives.', 'Mentoring.', 'Mentors.', 'Missing the 189.', 'Mother tongue.', 'Mouse dissection.', 'Muddy field.', 'Muggers.', 'Mugging.', 'National Science Challenge.', 'No sleep.', 'Non-Econs Students.', 'Not taking pipette tips in order.', 'Nothing.', 'NUS modules.', 'NUSH Confessions.', 'Orientation Group Leaders.', 'OSAP.', 'Overshooting titration.', 'Passing NAPFA/IPPT.', 'PE lesson.', 'PE Shirt.', 'PEA consent forms.', 'PEA.', 'Playing with parafilm.', 'Puberty.', 'Reproductive Biology.', 'Risk Assessment and Management Form.', "Scientists' College.", 'SDYC.', 'Seniors.', 'Sexuality education.', 'Sleep or study.', 'SMO.', 'Speech Day.', 'Spinning chairs in Bio Lab.', 'Staffroom extension numbers.', 'Student exchange programme.', "Students' lounge.", 'Subject Specialisation.', 'SYF.', 'The canteen food.', 'The fire alarm.', 'The lumpy track.', 'The NMR Machine.', 'The NUS High green.', 'The PA system.', 'The school song.', 'Theatrette.', 'Using the fume hood.', 'Walking up the stairs.', 'Warm watercooler water.', 'Morning Announcements.', 'Year 1 Orientation.', 'Year 1 water feature.', 'Yellow forms.'];
+			document.getElementById("whitetext").innerHTML = whites[Math.floor(Math.random()*whites.length)];
+		}
+		newgreen();newwhite();
+		window.scrollTo(0, document.body.scrollHeight);
+		document.getElementById("greencard").onclick = function(){newgreen();};
+		document.getElementById("whitecard").onclick = function(){newwhite();};
+		document.getElementById("asdhuoi").onclick = function(){newgreen();newwhite();};
+	</script>
+	</body>
+	</html>
