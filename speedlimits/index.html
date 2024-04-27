@@ -18,6 +18,10 @@
         #map {
             min-height: 100%; 
         }
+
+	     .leaflet-tile-pane{
+        	filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+        }
     </style>
 </head>
 <body>
@@ -27,6 +31,16 @@
 	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     
 }).addTo(map);
+
+		var legend = L.control({position: 'bottomleft'});
+    legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend');
+    
+        div.innerHTML = "<div style='border-radius: 10px; background:#FFFFFFCC;display:inline-block'><div style='margin:10px;'><strong>Legend (kmh):</strong> <div style='border-radius: 50%;border: 5px solid #7cb342;display: inline-block;'><strong style='margin:2px'>30</strong></div> <div style='border-radius: 50%;border: 5px solid #ffd600;display: inline-block;'><strong style='margin:2px'>40</strong></div> <div style='border-radius: 50%;border: 5px solid #f9a825;display: inline-block;'><strong style='margin:2px'>50</strong></div> <div style='border-radius: 50%;border: 5px solid #e65100;display: inline-block;'><strong style='margin:2px'>60</strong></div> <div style='border-radius: 50%;border: 5px solid #a52714;display: inline-block;'><strong style='margin:2px'>70</strong></div> <div style='border-radius: 50%;border: 5px solid #880e4f;display: inline-block;'><strong style='margin:2px'>80</strong></div> <div style='border-radius: 50%;border: 5px solid #000;display: inline-block;'><strong style='margin:2px'>90</strong></div> </div></div>"
+    return div;
+    };
+    legend.addTo(map);
 
 	// Instantiate KMZ layer (async)
   var kmz = L.kmzLayer().addTo(map);
