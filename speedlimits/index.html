@@ -50,20 +50,6 @@
   width: 50%;
 }
 
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
     </style>
 </head>
 <body>
@@ -74,7 +60,6 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
     <h1>Map of road speed limits in Singapore</h1>
     <p>Made by Andrew Lee with data from OpenStreetMap</p>
     <p>Please wait a few seconds for the graphics to load...</p>
@@ -94,22 +79,8 @@
 var modal = document.getElementById("myModal");
 
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
 
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
 
 modal.style.display = "block";
 
@@ -134,8 +105,10 @@ modal.style.display = "block";
 
   // Add remote KMZ files as layers (NB if they are 3rd-party servers, they MUST have CORS enabled)
   kmz.load('speedlimits.kmz');
+		
 
   var control = L.control.layers(null, null, { collapsed:false }).addTo(map);
+		modal.style.display = "none";
 	</script>
 </body>
 </html>
