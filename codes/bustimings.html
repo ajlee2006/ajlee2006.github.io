@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Highly Precise But Probably Inaccurate Bus Timing App</title>
+    <link rel="stylesheet" href="https://ajlee2006.github.io/assets/css/style.css">
+</head>
+
+<body>
+
+<div class="container-lg px-3 my-5 markdown-body">
+    <h1>Highly Precise But Probably Inaccurate Bus Timing App</h1>
+    <input type="text" id="bsnoinput" placeholder="Enter bus stop number..."> <button onclick="refresh()">Refresh</button>
+    <p id="thep"></p>
+</div>
+
+<script>
+    function refresh() {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", "https://datamall2.mytransport.sg/ltaodataservice/v3/BusArrival?BusStopCode="+document.getElementById("bsnoinput").value, false); // false for synchronous request
+        xmlHttp.setRequestHeader("AccountKey", atob('cGpHNXcyTWRUL1dqNE8wc1diOVdpUT09'));
+        xmlHttp.send(null);
+        document.getElementById("thep").innerText = xmlHttp.responseText;
+    }
+</script>
+
+</body>
+
+</html>
