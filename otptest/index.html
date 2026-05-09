@@ -1,26 +1,266 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <!-- <meta http-equiv="refresh" content="1"> -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2FA Demo</title>
         <script src="sha.js"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                min-height: 100dvh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                padding: 20px;
+            }
+
+            .card {
+                background: #fff;
+                border-radius: 20px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+                padding: 40px;
+                display: flex;
+                gap: 40px;
+                align-items: center;
+                max-width: 900px;
+            }
+
+            .qr-section {
+                text-align: center;
+                flex-shrink: 0;
+            }
+
+            .qr-section img {
+                display: block;
+                width: 280px;
+                max-width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                border-radius: 12px;
+                border: 4px solid #f0f0f0;
+                padding: 8px;
+                background: #fff;
+            }
+
+            .info-section {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .info-section h1 {
+                color: #333;
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+
+            .info-section .subtitle {
+                margin-bottom: 24px;
+            }
+
+            .otp-label {
+                color: #666;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                margin-bottom: 12px;
+            }
+
+            .otp-display {
+                font-size: 56px;
+                font-weight: 700;
+                font-family: "SF Mono", "Monaco", "Consolas", monospace;
+                color: #667eea;
+                letter-spacing: 6px;
+                cursor: pointer;
+                /* user-select: all; */
+                transition: transform 0.15s, color 0.15s;
+                display: inline-block;
+            }
+
+            .otp-display:hover {
+                transform: scale(1.05);
+                color: #764ba2;
+            }
+
+            .otp-display.copied {
+                color: #28a745;
+            }
+
+            .timer-container {
+                margin-top: 24px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                max-width: 360px;
+            }
+
+            .timer-bar {
+                flex: 1;
+                height: 8px;
+                background: #eee;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+
+            .timer-fill {
+                height: 100%;
+                background: linear-gradient(90deg, #667eea, #764ba2);
+                border-radius: 4px;
+                transition: width 0.3s linear;
+            }
+
+            .timer-fill.warning {
+                background: linear-gradient(90deg, #ff9966, #ff5e62);
+            }
+
+            .timer-text {
+                font-size: 14px;
+                color: #666;
+                font-weight: 600;
+                min-width: 30px;
+                text-align: right;
+            }
+
+            /* Floating "Back to home" button */
+            .back-home {
+                position: fixed;
+                top: 16px;
+                left: 16px;
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 8px 14px;
+                background: rgba(255, 255, 255, 0.9);
+                color: #764ba2;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 999px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                transition: transform 0.15s, background 0.15s;
+                z-index: 10;
+            }
+
+            .back-home:hover {
+                background: #fff;
+                transform: translateX(-2px);
+            }
+
+            .back-home .arrow {
+                font-size: 16px;
+                line-height: 1;
+            }
+
+            /* Stack vertically and centre everything below this width */
+            @media (max-width: 820px) {
+                body {
+                    padding: 16px;
+                }
+
+                .card {
+                    padding: 32px 24px;
+                    gap: 24px;
+                    border-radius: 16px;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .qr-section img {
+                    width: min(240px, 60vw);
+                }
+
+                .info-section {
+                    flex: none;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .info-section h1 {
+                    font-size: 22px;
+                }
+
+                .otp-display {
+                    font-size: clamp(32px, 11vw, 52px);
+                    letter-spacing: 4px;
+                }
+
+                .timer-container {
+                    margin-top: 20px;
+                    width: 100%;
+                    max-width: 320px;
+                }
+            }
+
+            /* Very narrow phones */
+            @media (max-width: 380px) {
+                body {
+                    padding: 8px;
+                }
+
+                .card {
+                    padding: 20px 16px;
+                    gap: 16px;
+                }
+
+                .qr-section img {
+                    width: min(180px, 65vw);
+                }
+
+                .info-section h1 {
+                    font-size: 17px;
+                }
+
+                .info-section .subtitle {
+                    font-size: 13px;
+                    margin-bottom: 16px;
+                }
+
+                .otp-label {
+                    font-size: 12px;
+                    letter-spacing: 1.5px;
+                    margin-bottom: 8px;
+                }
+
+                .otp-display {
+                    letter-spacing: 2px;
+                }
+
+                .back-home {
+                    top: 10px;
+                    left: 10px;
+                    padding: 6px 12px;
+                    font-size: 13px;
+                }
+            }
+        </style>
         <script>
             TOTP = function() {
-
                 var dec2hex = function(s) {
                     return (s < 15.5 ? "0" : "") + Math.round(s).toString(16);
                 };
-
                 var hex2dec = function(s) {
                     return parseInt(s, 16);
                 };
-
                 var leftpad = function(s, l, p) {
                     if(l + 1 >= s.length) {
                         s = Array(l + 1 - s.length).join(p) + s;
                     }
                     return s;
                 };
-
                 var base32tohex = function(base32) {
                     var base32chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
                     var bits = "";
@@ -31,44 +271,82 @@
                     }
                     for(var i = 0; i + 4 <= bits.length; i+=4) {
                         var chunk = bits.substr(i, 4);
-                        hex = hex + parseInt(chunk, 2).toString(16) ;
+                        hex = hex + parseInt(chunk, 2).toString(16);
                     }
                     return hex;
                 };
-
                 this.getOTP = function(secret) {
-                    try {
-                        var epoch = Math.round(new Date().getTime() / 1000.0);
-                        var time = leftpad(dec2hex(Math.floor(epoch / 30)), 16, "0");
-                        var hmacObj = new jsSHA(time, "HEX");
-                        var hmac = hmacObj.getHMAC(base32tohex(secret), "HEX", "SHA-1", "HEX");
-                        var offset = hex2dec(hmac.substring(hmac.length - 1));
-                        var otp = (hex2dec(hmac.substr(offset * 2, 8)) & hex2dec("7fffffff")) + "";
-                        otp = (otp).substr(otp.length - 6, 6);
-                    } catch (error) {
-                        throw error;
-                    }
+                    var epoch = Math.round(new Date().getTime() / 1000.0);
+                    var time = leftpad(dec2hex(Math.floor(epoch / 30)), 16, "0");
+                    var hmacObj = new jsSHA(time, "HEX");
+                    var hmac = hmacObj.getHMAC(base32tohex(secret), "HEX", "SHA-1", "HEX");
+                    var offset = hex2dec(hmac.substring(hmac.length - 1));
+                    var otp = (hex2dec(hmac.substr(offset * 2, 8)) & hex2dec("7fffffff")) + "";
+                    otp = (otp).substr(otp.length - 6, 6);
                     return otp;
                 };
-
             }
         </script>
     </head>
     <body>
-        <div style="display:inline-block;">
-            <img src="JBSWY3DPEHPK3PXP.png" width="300">
+        <a href="/" class="back-home">
+            <span class="arrow">←</span>
+            <span>Back to home</span>
+        </a>
+
+        <div class="card">
+            <div class="qr-section">
+                <img src="JBSWY3DPEHPK3PXP.png" alt="QR Code">
+            </div>
+            <div class="info-section">
+                <h1>Two-Factor Authentication<br>(2FA) Demo</h1>
+                <p class="subtitle">Scan this code with your 2FA app</p>
+
+                <div class="otp-label">Current OTP</div>
+                <span id="otp" class="otp-display">......</span>
+
+                <div class="timer-container">
+                    <div class="timer-bar">
+                        <div id="timerFill" class="timer-fill" style="width:100%"></div>
+                    </div>
+                    <span id="timerText" class="timer-text">30s</span>
+                </div>
+            </div>
         </div>
-        <div style="display:inline-block;font-family:sans-serif">
-            <p>Scan this code with your 2FA app</p>
-            <span style="font-size:40px">The current OTP is </span><br>
-            <b id="p1" style="font-size:60px">...</b>
-        </div>
+
         <script>
             var totpObj = new TOTP();
-            window.setInterval(function() {
+            var otpEl = document.getElementById("otp");
+            var timerFill = document.getElementById("timerFill");
+            var timerText = document.getElementById("timerText");
+
+            // otpEl.addEventListener("click", function() {
+            //     navigator.clipboard.writeText(otpEl.textContent).then(function() {
+            //         otpEl.classList.add("copied");
+            //         setTimeout(function() {
+            //             otpEl.classList.remove("copied");
+            //         }, 1500);
+            //     });
+            // });
+
+            function update() {
                 var otp = totpObj.getOTP("JBSWY3DPEHPK3PXP");
-                document.getElementById("p1").innerHTML = otp;
-            }, 100);
+                otpEl.textContent = otp; // otp.substr(0, 3) + " " + otp.substr(3, 3)
+
+                var secondsLeft = 30 - (Math.floor(Date.now() / 1000) % 30);
+                var pct = (secondsLeft / 30) * 100;
+                timerFill.style.width = pct + "%";
+                timerText.textContent = secondsLeft + "s";
+
+                if (secondsLeft <= 5) {
+                    timerFill.classList.add("warning");
+                } else {
+                    timerFill.classList.remove("warning");
+                }
+            }
+
+            update();
+            window.setInterval(update, 200);
         </script>
     </body>
 </html>
